@@ -56,8 +56,8 @@ Copy the configuration files to your VS Code User directory.
 mkdir -p "$HOME/Library/Application Support/Code/User"
 
 # Copy settings and snippets
-cp .vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
-cp .vscode/custom.code-snippets "$HOME/Library/Application Support/Code/User/snippets/custom.code-snippets"
+cp src/.vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+cp src/.vscode/custom.code-snippets "$HOME/Library/Application Support/Code/User/snippets/custom.code-snippets"
 ```
 
 > **Note:** This will overwrite your existing `settings.json`. Make a backup if necessary!
@@ -66,7 +66,7 @@ cp .vscode/custom.code-snippets "$HOME/Library/Application Support/Code/User/sni
 
 ## 🛠️ Configuration Deep Dive
 
-Below is a detailed explanation of the important, non-default choices present in `.vscode/settings.json` and why I set them.
+Below is a detailed explanation of the important, non-default choices present in `src/.vscode/settings.json` and why I set them.
 
 ### 🖥️ UI & Appearance
 
@@ -135,9 +135,12 @@ This setup includes a `custom.code-snippets` file packed with productivity boost
 
 ```text
 .
-├── .vscode/
-│   ├── settings.json          # Main VS Code configuration
-│   └── custom.code-snippets   # Global code snippets
+├── src/
+│   └── .vscode/
+│       ├── settings.json          # Main VS Code configuration
+│       └── custom.code-snippets   # Global code snippets
+├── assets/
+│   └── vscode.png             # Project Icon
 ├── README.md                  # Documentation
 └── (Optional) extensions.txt  # List of installed extensions
 ```
@@ -159,5 +162,5 @@ This setup includes a `custom.code-snippets` file packed with productivity boost
 ---
 
 <sub align="center" style="font-size: 10px; color: gray;">
-Visual Studio Code, VS Code, and the Visual Studio Code icon are trademarks of Microsoft Corporation. All rights reserved.
+<em>Visual Studio Code, VS Code, and the Visual Studio Code icon are trademarks of Microsoft Corporation. All rights reserved.</em>
 </sub>

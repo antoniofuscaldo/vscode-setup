@@ -47,9 +47,11 @@ VS Code Profiles allow you to have a dedicated environment for this setup withou
 3.  **Apply Configuration**:
     - Copy the content of [`src/.vscode/settings.json`](src/.vscode/settings.json) from this repo.
     - Paste it into the `settings.json` file you just opened in VS Code.
- *   (Optional) Copy [`src/.vscode/keybindings.json`](src/.vscode/keybindings.json) content to your `keybindings.json` (Open Command Palette > "Preferences: Open Keyboard Shortcuts (JSON)").
-    *   (Optional) Copy [`src/.vscode/tasks.json`](src/.vscode/tasks.json) to your User `tasks.json` if you want to use the included automation tasks.
-    *   Save the files.
+
+- (Optional) Copy [`src/.vscode/keybindings.json`](src/.vscode/keybindings.json) content to your `keybindings.json` (Open Command Palette > "Preferences: Open Keyboard Shortcuts (JSON)").
+- (Optional) Copy [`src/.vscode/tasks.json`](src/.vscode/tasks.json) to your User `tasks.json` if you want to use the included automation tasks.
+- Save the files.
+
 4.  **Install Extensions**:
     - VS Code will recommend extensions when you open this folder. Accept the recommendations to install them into this profile.
 
@@ -228,6 +230,15 @@ This setup comes with a curated list of extensions to supercharge your developme
 ### 🔧 Utilities
 
 - **[Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)** (`mechatroner.rainbow-csv`): Highlight CSV and TSV files.
+
+---
+
+## 🏗️ Included Tasks
+
+This setup includes a `tasks.json` file with helper commands to manage your configuration. You can run them via `Terminal > Run Task...`:
+
+- **⚡ Update Extensions List**: Updates `src/extensions.txt` with your currently installed extensions. Useful for backing up your setup.
+- **🧪 Open Playground**: Quickly opens the `playground.js` file to test your theme and font settings.
 
 ---
 

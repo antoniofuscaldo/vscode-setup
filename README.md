@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/vscode.png" alt="VS Code Setup" width="150" />
+</p>
+
 # 🎨 Ultimate VS Code Setup
 
 > **A highly opinionated, aesthetic, and productivity-focused configuration for Visual Studio Code.**

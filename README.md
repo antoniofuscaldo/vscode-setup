@@ -62,19 +62,57 @@ cp .vscode/custom.code-snippets "$HOME/Library/Application Support/Code/User/sni
 
 ## 🛠️ Configuration Deep Dive
 
-Here is why this setup is special.
+Below is a detailed explanation of the important, non-default choices present in `.vscode/settings.json` and why I set them.
 
-### 🎨 Visuals & UI
+### 🖥️ UI & Appearance
 
-- **Minimalist Interface**: `breadcrumbs.enabled: false` and `workbench.activityBar.location: top` remove clutter, giving you more screen real estate for code.
-- **Smooth Animations**: `editor.cursorBlinking: expand` and `editor.cursorSmoothCaretAnimation: on` make typing feel fluid and responsive.
-- **Variable Fonts**: Configured to use `Monaspace Neon Var` with specific weights and ligatures for a modern coding experience.
+- **Startup**: `workbench.startupEditor: none` — Skips the welcome page for a faster launch.
+- **Theme**: `workbench.iconTheme: catppuccin-mocha` & `workbench.colorTheme: Catppuccin Mocha` — The core of the pastel aesthetic.
+- **Layout**: `workbench.activityBar.location: top` — Moves the activity bar to the top for a compact, vertical-space-saving layout.
+- **Terminal**: `workbench.colorCustomizations.terminalCursor.foreground` — Custom cursor color to match the theme perfectly.
+- **Explorer**:
+  - `breadcrumbs.enabled: false` — Hides breadcrumbs to reduce header clutter.
+  - `explorer.confirmDelete: true` — Safety first: confirm before deleting files.
+  - `explorer.confirmDragAndDrop: false` — Prevents accidental drag-and-drop file moves.
 
-### ⚡ Productivity
+### ✍️ Editor Typography & Behavior
 
-- **Auto-Formatting**: `editor.formatOnSave: true` and `editor.codeActionsOnSave` ensure your code is always clean and imports are sorted.
-- **Smart Git**: `git.enableSmartCommit` and `git.autofetch` streamline your version control operations.
-- **Safe Explorer**: `explorer.confirmDragAndDrop: false` prevents accidental file moves, while `explorer.confirmDelete: true` keeps you safe.
+- **Font**: `Monaspace Neon Var` (Size 14, Weight 400, Line Height 1.6) — Tuned for maximum readability.
+- **Ligatures**: `editor.fontLigatures` & `editor.fontVariations` — Enables advanced variable font features and ligatures.
+- **Animations**: `editor.cursorBlinking: expand` & `editor.cursorSmoothCaretAnimation: on` — A smooth, modern typing experience.
+- **Navigation**: `editor.smoothScrolling` & `editor.mouseWheelZoom` — Fluid scrolling and pinch-to-zoom support.
+- **Editing**:
+  - `editor.linkedEditing: true` — Edit paired HTML tags simultaneously.
+  - `editor.wordWrap: on` — No horizontal scrolling.
+  - `editor.tabSize: 2` — Standard 2-space indentation.
+
+### 🧹 Formatting & Linting
+
+- **Default Formatter**: `esbenp.prettier-vscode` — Prettier handles all formatting.
+- **Automation**: `editor.formatOnPaste`, `formatOnType`, `formatOnSave: true` — Keeps code consistent automatically.
+- **Auto-Fix**: `editor.codeActionsOnSave` — Runs `source.fixAll.eslint` and `source.sortImports` on every save.
+
+### 💾 Files & Terminal
+
+- **Auto-Save**: `files.autoSave: onFocusChange` — Saves changes whenever you switch windows or tabs.
+- **Terminal Font**: `terminal.integrated.fontFamily: MesloLGS NF` — Ensures powerline glyphs render correctly.
+- **Links**: `terminal.integrated.allowedLinkSchemes` — Allows clicking `file`, `http`, `https` links directly in the terminal.
+
+### 🌳 Git & Version Control
+
+- **Workflow**: `git.enableSmartCommit`, `git.autofetch`, `git.confirmSync: false` — A faster, less intrusive Git experience.
+- **GitLens**: Pre-configured AI model settings for users of GitLens features.
+
+### 🤖 AI & Copilot
+
+- **Copilot**: `github.copilot.enable: false` — Disabled by default (enable if you use it).
+- **Other Assistants**: Configurations for `geminicodeassist` and `cody` are included for those who use them.
+
+### ⚡ Performance & Extras
+
+- **Diff Editor**: `diffEditor.codeLens: true` — Enhanced diff viewing.
+- **Code Runner**: `code-runner.executorMap` — Custom commands to run code snippets quickly for various languages.
+- **Python**: `python.defaultInterpreterPath` — Set to `/usr/local/bin/python3` (adjust path as needed).
 
 ---
 

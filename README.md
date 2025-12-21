@@ -30,7 +30,7 @@ This repository contains a complete configuration to replicate a modern, clean, 
 
 ---
 
-## � Quick Setup (3 Minutes)
+## 🚀 Quick Setup (3 Minutes)
 
 Follow these steps to transform your VS Code instantly.
 
@@ -48,7 +48,9 @@ cd vscode-setup
 
 ### 3. Install Extensions
 
-If you have an `extensions.txt` file (or create one), install all plugins at once:
+VS Code will automatically recommend extensions when you open this folder, thanks to `.vscode/extensions.json`.
+
+Alternatively, if you want to install them via command line using the legacy list:
 
 ```bash
 xargs -L 1 code --install-extension < extensions.txt

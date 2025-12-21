@@ -237,8 +237,16 @@ This setup comes with a curated list of extensions to supercharge your developme
 
 This setup includes a `tasks.json` file with helper commands to manage your configuration. You can run them via `Terminal > Run Task...`:
 
-- **⚡ Update Extensions List**: Updates `src/extensions.txt` with your currently installed extensions. Useful for backing up your setup.
+### 🛠️ Maintenance
+- **⚡ Update Extensions List**: Updates `src/extensions.txt` with your currently installed extensions.
 - **🧪 Open Playground**: Quickly opens the `playground.js` file to test your theme and font settings.
+
+### 🚀 Productivity
+- **📦 Smart Install Deps**: Detects your project type (`package.json`, `requirements.txt`, `pom.xml`, etc.) and runs the correct install command.
+- **🔍 Find TODOs**: Scans the entire project for `TODO` and `FIXME` comments.
+- **🚀 Start Local Server**: Launches a simple Python HTTP server on port 8000.
+- **💀 Kill Process on Port...**: Force kills a process on a specific port (lifesaver when a server gets stuck).
+- **🔄 Git Sync**: Performs a `git pull --rebase` followed by a `git push`.
 
 ---
 

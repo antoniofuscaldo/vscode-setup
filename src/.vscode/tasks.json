@@ -22,6 +22,62 @@
         "kind": "test",
         "isDefault": true
       }
+    },
+    {
+      "label": "📦 Smart Install Deps",
+      "type": "shell",
+      "command": "if [ -f 'package.json' ]; then npm install; elif [ -f 'requirements.txt' ]; then pip install -r requirements.txt; elif [ -f 'pom.xml' ]; then mvn install; elif [ -f 'Cargo.toml' ]; then cargo build; else echo '❌ No supported dependency file found (package.json, requirements.txt, pom.xml, Cargo.toml)'; fi",
+      "problemMatcher": [],
+      "detail": "Detects the project type (Node, Python, Java, Rust) and installs dependencies automatically.",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "🚀 Start Local Server",
+      "type": "shell",
+      "command": "python3 -m http.server 8000",
+      "problemMatcher": [],
+      "detail": "Serves the current directory on http://localhost:8000 using Python.",
+      "presentation": {
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "🔍 Find TODOs",
+      "type": "shell",
+      "command": "grep -rnE \"TODO|FIXME\" . --exclude-dir={node_modules,.git,dist,build,coverage}",
+      "problemMatcher": [],
+      "detail": "Scans the entire project for TODO and FIXME comments, ignoring common build folders.",
+      "presentation": {
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "💀 Kill Process on Port...",
+      "type": "shell",
+      "command": "lsof -ti :${input:portNumber} | xargs kill -9",
+      "problemMatcher": [],
+      "detail": "Force kills any process running on the specified port (useful for stuck servers).",
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "🔄 Git Sync (Pull & Push)",
+      "type": "shell",
+      "command": "git pull --rebase && git push",
+      "problemMatcher": [],
+      "detail": "Pulls remote changes (rebase) and pushes your current branch."
+    }
+  ],
+  "inputs": [
+    {
+      "id": "portNumber",
+      "description": "Port number to kill",
+      "default": "8000",
+      "type": "promptString"
     }
   ]
 }

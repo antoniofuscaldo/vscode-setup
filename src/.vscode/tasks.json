@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "⚡ Update Extensions List",
+      "type": "shell",
+      "command": "code --list-extensions > src/extensions.txt",
+      "problemMatcher": [],
+      "detail": "Updates the legacy extensions.txt file with your currently installed extensions.",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "🧪 Open Playground",
+      "type": "shell",
+      "command": "code playground.js",
+      "problemMatcher": [],
+      "detail": "Opens the playground file to test fonts and colors.",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

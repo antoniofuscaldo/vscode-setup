@@ -32,7 +32,30 @@ This repository contains a complete configuration to replicate a modern, clean, 
 
 ## 🚀 Quick Setup (3 Minutes)
 
-Follow these steps to transform your VS Code instantly.
+### 👤 Option A: Use a VS Code Profile (Recommended)
+
+VS Code Profiles allow you to have a dedicated environment for this setup without affecting your default configuration.
+
+1.  **Create a Profile**:
+    - Click the **Manage** gear icon ⚙️ (bottom left) > **Profiles** > **Create Profile...**
+    - Select **Create an Empty Profile**.
+    - Name it `Ultimate Setup` (or any name you prefer).
+    - Click **Create**.
+2.  **Open Profile Settings**:
+    - Open the Command Palette (`Cmd+Shift+P`).
+    - Type **"Preferences: Open User Settings (JSON)"** and select it.
+3.  **Apply Configuration**:
+    - Copy the content of [`src/.vscode/settings.json`](src/.vscode/settings.json) from this repo.
+    - Paste it into the `settings.json` file you just opened in VS Code.
+    - Save the file.
+4.  **Install Extensions**:
+    - VS Code will recommend extensions when you open this folder. Accept the recommendations to install them into this profile.
+
+---
+
+### 🛠️ Option B: Global Setup (Manual)
+
+If you prefer to apply this configuration globally to your default profile, follow these steps.
 
 ### 1. Clone the Repository
 

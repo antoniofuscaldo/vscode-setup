@@ -77,10 +77,14 @@ cd vscode-setup
 
 VS Code will automatically recommend extensions when you open this folder, thanks to `.vscode/extensions.json`.
 
-Alternatively, if you want to install them via command line using the legacy list:
+Alternatively, if you want to install them via command line using the legacy list (platform-specific):
 
 ```bash
-xargs -L 1 code --install-extension < extensions.txt
+xargs -L 1 code --install-extension < src/extensions.txt
+```
+
+```powershell
+Get-Content src/extensions.txt | ForEach-Object { code --install-extension $_ }
 ```
 
 ### 4. Apply Settings
@@ -212,6 +216,7 @@ This setup comes with a curated list of extensions to supercharge your developme
 - **[ErrorLens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)** (`usernamehw.errorlens`): Improve highlighting of errors and warnings.
 - **[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)** (`eamodio.gitlens`): Supercharge Git within VS Code.
 - **[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)** (`formulahendry.code-runner`): Run code snippet or code file.
+- **[Document This](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis)** (`oouo-diogo-perdigao.docthis`): Generate JSDoc comments for JS/TS.
 - **[CodeTime](https://marketplace.visualstudio.com/items?itemName=jannchie.codetime)** (`jannchie.codetime`): Time tracking and metrics.
 - **[Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)** (`deerawan.vscode-dash`): Dash, Zeal, and Velocity documentation integration.
 
@@ -238,10 +243,12 @@ This setup comes with a curated list of extensions to supercharge your developme
 This setup includes a `tasks.json` file with helper commands to manage your configuration. You can run them via `Terminal > Run Task...`:
 
 ### 🛠️ Maintenance
+
 - **⚡ Update Extensions List**: Updates `src/extensions.txt` with your currently installed extensions.
 - **🧪 Open Playground**: Quickly opens the `playground.js` file to test your theme and font settings.
 
 ### 🚀 Productivity
+
 - **📦 Smart Install Deps**: Detects your project type (`package.json`, `requirements.txt`, `pom.xml`, etc.) and runs the correct install command.
 - **🔍 Find TODOs**: Scans the entire project for `TODO` and `FIXME` comments.
 - **🚀 Start Local Server**: Launches a simple Python HTTP server on port 8000.
@@ -282,7 +289,7 @@ A `playground.js` file is included in the root of this repository. Open it to in
 ├── assets/
 │   └── vscode.png             # Project Icon
 ├── README.md                  # Documentation
-└── (Optional) extensions.txt  # List of installed extensions
+└── src/extensions.txt         # Legacy list of installed extensions
 ```
 
 ---

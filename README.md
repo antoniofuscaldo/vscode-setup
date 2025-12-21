@@ -151,3 +151,9 @@ This setup includes a `custom.code-snippets` file packed with productivity boost
 <p align="center">
   Made with ❤️ by <a href="https://github.com/antoniofuscaldo">Antonio Fuscaldo</a>
 </p>
+
+---
+
+<sub align="center" style="font-size: 10px; color: gray;">
+Visual Studio Code, VS Code, and the Visual Studio Code icon are trademarks of Microsoft Corporation. All rights reserved.
+</sub>

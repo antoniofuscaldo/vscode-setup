@@ -164,6 +164,15 @@
     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
-
-  "python.defaultInterpreterPath": "/usr/local/bin/python3"
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "bootstrapIntelliSense": {
+    "enable": true,
+    "bsVersion": "5.3.7",
+    "useLocalFile": false,
+    "cssFilePath": "",
+    "languageSupport": []
+  },
+  "window.newWindowProfile": "Default",
+  "cSpell.language": "en,it"
 }

@@ -282,14 +282,18 @@ A `playground.js` file is included in the root of this repository. Open it to in
 
 ```text
 .
-├── src/
-│   └── .vscode/
-│       ├── settings.json          # Main VS Code configuration
-│       └── custom.code-snippets   # Global code snippets
-├── assets/
-│   └── vscode.png             # Project Icon
+├── .editorconfig              # Coding style configuration
+├── playground.js              # Theme & Font testing playground
 ├── README.md                  # Documentation
-└── src/extensions.txt         # Legacy list of installed extensions
+├── assets/                    # Project images
+└── src/
+    ├── extensions.txt         # Legacy list of extensions
+    └── .vscode/
+        ├── extensions.json    # Recommended extensions
+        ├── settings.json      # Main VS Code configuration
+        ├── tasks.json         # Automation tasks
+        ├── keybindings.json   # Optional keybindings
+        └── custom.code-snippets
 ```
 
 ---

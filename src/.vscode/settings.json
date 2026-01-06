@@ -7,11 +7,6 @@
     "terminalCursor.foreground": "#cba6f7"
   },
 
-  "breadcrumbs.enabled": false,
-  "explorer.confirmDelete": true,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.compactFolders": false,
-
   "editor.fontFamily": "Monaspace Neon Var",
   "editor.fontWeight": "400",
   "editor.fontSize": 14,
@@ -19,32 +14,46 @@
   "editor.fontVariations": true,
   "editor.allowVariableFonts": true,
   "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'liga'",
+
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.scrollbar.vertical": "hidden",
   "editor.mouseWheelZoom": true,
+
   "editor.linkedEditing": true,
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
   "editor.autoIndentOnPaste": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.largeFileOptimizations": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
-    "source.sortImports": "always"
+    "source.sortImports": "never",
+    "source.fixAll.markdownlint":"always"
   },
+
+  "diffEditor.codeLens": true,
+
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
 
   "files.autoSave": "onFocusChange",
-  "files.associations": {
-    "*.css": "css"
-  },
 
   "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.allowedLinkSchemes": [
     "file",
     "http",
@@ -54,46 +63,19 @@
     "vscode-insiders",
     "ms-settings"
   ],
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.scrollback": 10000,
 
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.ignoreRebaseWarning": true,
-
+  "git.postCommitCommand": "sync",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-
-  "redhat.telemetry.enabled": false,
-  "settingsSync.ignoredExtensions": [],
-  "chat.viewSessions.orientation": "stacked",
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-
   "javascript.preferences.quoteStyle": "double",
 
-  "eslint.useFlatConfig": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "astro", // Enable .astro
-    "typescript", // Enable .ts
-    "typescriptreact" // Enable .tsx
-  ],
-  "prettier.documentSelectors": ["**/*.astro"],
-
-  "geminicodeassist.project": "",
-  "geminicodeassist.inlineSuggestions.enableAuto": false,
-  "cody.suggestions.mode": "autocomplete",
+  "python-envs.defaultEnvManager": "ms-python.python:system",
 
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
@@ -101,19 +83,33 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
 
-  "diffEditor.codeLens": true,
-  "editor.largeFileOptimizations": false,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "prettier.documentSelectors": ["**/*.astro"],
 
   "code-runner.executorMap": {
     "javascript": "node",
+    "typescript": "ts-node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "python": "python -u",
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "zig": "zig run",
     "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
     "php": "php",
-    "python": "python -u",
     "perl": "perl",
     "perl6": "perl6",
     "ruby": "ruby",
@@ -126,7 +122,6 @@
     "fsharp": "fsi",
     "csharp": "scriptcs",
     "vbscript": "cscript //Nologo",
-    "typescript": "ts-node",
     "coffeescript": "coffee",
     "scala": "scala",
     "swift": "swift",
@@ -164,8 +159,22 @@
     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "python-envs.defaultEnvManager": "ms-python.python:system",
+
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "markdown": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.editor.enableCodeActions": true,
+  "github.copilot.renameSuggestions.triggerAutomatically": true,
+  "geminicodeassist.project": "",
+  "geminicodeassist.inlineSuggestions.enableAuto": false,
+  "cody.suggestions.mode": "autocomplete",
+  "chat.viewSessions.orientation": "stacked",
+
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+
   "bootstrapIntelliSense": {
     "enable": true,
     "bsVersion": "5.3.7",
@@ -173,6 +182,55 @@
     "cssFilePath": "",
     "languageSupport": []
   },
-  "window.newWindowProfile": "Default",
-  "cSpell.language": "en,it"
+
+  "cSpell.language": "en,it",
+
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+
+  "settingsSync.ignoredExtensions": [],
+  "http.systemCertificatesNode": true,
+
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": true,
+
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+
+  "editor.inlayHints.enabled": "offUnlessPressed",
+
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true,
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.vscode": false
+  },
+
+  "git.decorations.enabled": true,
+  "scm.diffDecorations": "gutter",
+
+  "git.branchProtection": [
+    "main",
+    "master"
+  ],
+
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.tree.indent": 16,
+
+  "problems.autoReveal": true,
+  "problems.showCurrentInStatus": true,
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true
 }

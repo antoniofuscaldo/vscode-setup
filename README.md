@@ -12,8 +12,8 @@ This repository contains a complete configuration to replicate a modern, clean, 
 
 ## ✨ Features at a Glance
 
-| Category     | Choice                                                                              | Description                                        |
-| :----------- | :---------------------------------------------------------------------------------- | :------------------------------------------------- |
+| Category     | Choice                                                                             | Description                                        |
+| :----------- | :--------------------------------------------------------------------------------- | :------------------------------------------------- |
 | **Theme**    | 🐱 [Catppuccin Mocha](https://github.com/catppuccin/vscode)                         | A soothing, high-contrast pastel theme.            |
 | **Icons**    | 📁 [Catppuccin Icons](https://github.com/catppuccin/vscode-icons)                   | Matching icons for a cohesive look.                |
 | **Font**     | 🔤 [Monaspace Neon](https://monaspace.githubnext.com/)                              | A texture-healing variable font from GitHub Next.  |
@@ -36,15 +36,15 @@ This repository contains a complete configuration to replicate a modern, clean, 
 
 VS Code Profiles allow you to have a dedicated environment for this setup without affecting your default configuration.
 
-1.  **Create a Profile**:
+1. **Create a Profile**:
     - Click the **Manage** gear icon ⚙️ (bottom left) > **Profiles** > **Create Profile...**
     - Select **Create an Empty Profile**.
     - Name it `Ultimate Setup` (or any name you prefer).
     - Click **Create**.
-2.  **Open Profile Settings**:
+2. **Open Profile Settings**:
     - Open the Command Palette (`Cmd+Shift+P`).
     - Type **"Preferences: Open User Settings (JSON)"** and select it.
-3.  **Apply Configuration**:
+3. **Apply Configuration**:
     - Copy the content of [`src/.vscode/settings.json`](src/.vscode/settings.json) from this repo.
     - Paste it into the `settings.json` file you just opened in VS Code.
 
@@ -52,7 +52,7 @@ VS Code Profiles allow you to have a dedicated environment for this setup withou
 - (Optional) Copy [`src/.vscode/tasks.json`](src/.vscode/tasks.json) to your User `tasks.json` if you want to use the included automation tasks.
 - Save the files.
 
-4.  **Install Extensions**:
+1. **Install Extensions**:
     - VS Code will recommend extensions when you open this folder. Accept the recommendations to install them into this profile.
 
 ---

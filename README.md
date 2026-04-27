@@ -1,19 +1,20 @@
-<p align="center">
-  <img src="assets/vscode.png" alt="VS Code Setup" width="150" />
-</p>
-
 # 🎨 Ultimate VS Code Setup
 
-> **A highly opinionated, aesthetic, and productivity-focused configuration for Visual Studio Code.**
+![VS Code Setup](assets/vscode.png)
 
-This repository contains a complete configuration to replicate a modern, clean, and efficient development environment. It focuses on a pastel aesthetic (Catppuccin), modern typography (Monaspace), and a frictionless workflow.
+> **A highly opinionated, aesthetic, and productivity-focused configuration for
+> Visual Studio Code.**
+>
+> This repository contains a complete configuration to replicate a modern, clean,
+> and efficient development environment. It focuses on a pastel aesthetic
+> (Catppuccin), modern typography (Monaspace), and a frictionless workflow.
 
 ---
 
 ## ✨ Features at a Glance
 
-| Category     | Choice                                                                             | Description                                        |
-| :----------- | :--------------------------------------------------------------------------------- | :------------------------------------------------- |
+| Category     | Choice                                                                              | Description                                        |
+| :----------- | :---------------------------------------------------------------------------------- | :------------------------------------------------- |
 | **Theme**    | 🐱 [Catppuccin Mocha](https://github.com/catppuccin/vscode)                         | A soothing, high-contrast pastel theme.            |
 | **Icons**    | 📁 [Catppuccin Icons](https://github.com/catppuccin/vscode-icons)                   | Matching icons for a cohesive look.                |
 | **Font**     | 🔤 [Monaspace Neon](https://monaspace.githubnext.com/)                              | A texture-healing variable font from GitHub Next.  |
@@ -23,10 +24,8 @@ This repository contains a complete configuration to replicate a modern, clean, 
 
 ## � Gallery
 
-<p align="center">
-  <img src="assets/screenshot-1.png" alt="VS Code Screenshot 1" width="50%" />
-  <img src="assets/screenshot-2.png" alt="VS Code Screenshot 2" width="50%" />
-</p>
+![VS Code Screenshot 1](assets/screenshot-1.png)
+![VS Code Screenshot 2](assets/screenshot-2.png)
 
 ---
 
@@ -37,69 +36,50 @@ This repository contains a complete configuration to replicate a modern, clean, 
 VS Code Profiles allow you to have a dedicated environment for this setup without affecting your default configuration.
 
 1. **Create a Profile**:
-    - Click the **Manage** gear icon ⚙️ (bottom left) > **Profiles** > **Create Profile...**
-    - Select **Create an Empty Profile**.
-    - Name it `Ultimate Setup` (or any name you prefer).
-    - Click **Create**.
+   - Click the **Manage** gear icon ⚙️ (bottom left) > **Profiles** > **Create Profile...**
+   - Select **Create an Empty Profile**.
+   - Name it `Ultimate Setup` (or any name you prefer).
+   - Click **Create**.
 2. **Open Profile Settings**:
-    - Open the Command Palette (`Cmd+Shift+P`).
-    - Type **"Preferences: Open User Settings (JSON)"** and select it.
+   - Open the Command Palette (`Cmd+Shift+P`).
+   - Type **"Preferences: Open User Settings (JSON)"** and select it.
 3. **Apply Configuration**:
-    - Copy the content of [`src/.vscode/settings.json`](src/.vscode/settings.json) from this repo.
-    - Paste it into the `settings.json` file you just opened in VS Code.
+   - Copy the content of [`src/.vscode/settings.json`](src/.vscode/settings.json) from this repo.
+   - Paste it into the `settings.json` file you just opened in VS Code.
 
 - (Optional) Copy [`src/.vscode/keybindings.json`](src/.vscode/keybindings.json) content to your `keybindings.json` (Open Command Palette > "Preferences: Open Keyboard Shortcuts (JSON)").
 - (Optional) Copy [`src/.vscode/tasks.json`](src/.vscode/tasks.json) to your User `tasks.json` if you want to use the included automation tasks.
 - Save the files.
 
 1. **Install Extensions**:
-    - VS Code will recommend extensions when you open this folder. Accept the recommendations to install them into this profile.
+   - VS Code will recommend extensions when you open this folder. Accept the recommendations to install them into this profile.
 
 ---
 
-### 🛠️ Option B: Global Setup (Manual)
-
-If you prefer to apply this configuration globally to your default profile, follow these steps.
+### 🛠️ Option B: Manual Setup (macOS, Linux & Windows)
 
 ### 1. Clone the Repository
 
-```bash
+```powershell
 git clone https://github.com/antoniofuscaldo/vscode-setup.git
 cd vscode-setup
 ```
 
-### 2. Install Prerequisites
-
-- **Fonts**: Download and install the **[Monaspace](https://monaspace.githubnext.com/)** font family.
-- **VS Code CLI**: Ensure the `code` command is installed (`Cmd+Shift+P` > `Shell Command: Install 'code' command in PATH`).
-
-### 3. Install Extensions
-
-VS Code will automatically recommend extensions when you open this folder, thanks to `.vscode/extensions.json`.
-
-Alternatively, if you want to install them via command line using the legacy list (platform-specific):
-
-```bash
-xargs -L 1 code --install-extension < src/extensions.txt
-```
+### 2. Install Extensions
 
 ```powershell
 Get-Content src/extensions.txt | ForEach-Object { code --install-extension $_ }
 ```
 
-### 4. Apply Settings
+### 3. Apply Settings
 
-Copy the configuration files to your VS Code User directory.
-
-**MacOS:**
-
-```bash
-# Create the directory if it doesn't exist
-mkdir -p "$HOME/Library/Application Support/Code/User"
-
-# Copy settings and snippets
-cp src/.vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
-cp src/.vscode/custom.code-snippets "$HOME/Library/Application Support/Code/User/snippets/custom.code-snippets"
+```powershell
+$dest = "$env:APPDATA\Code\User"
+New-Item -ItemType Directory -Force -Path "$dest\snippets" | Out-Null
+Copy-Item src\.vscode\settings.json "$dest\settings.json"
+Copy-Item src\.vscode\keybindings.json "$dest\keybindings.json"
+Copy-Item src\.vscode\tasks.json "$dest\tasks.json"
+Copy-Item src\.vscode\custom.code-snippets "$dest\snippets\custom.code-snippets"
 ```
 
 > **Note:** This will overwrite your existing `settings.json`. Make a backup if necessary!
@@ -135,7 +115,7 @@ Below is a detailed explanation of the important, non-default choices present in
 ### 🧹 Formatting & Linting
 
 - **Default Formatter**: `esbenp.prettier-vscode` — Prettier handles all formatting.
-- **Automation**: `editor.formatOnPaste`, `formatOnType`, `formatOnSave: true` — Keeps code consistent automatically.
+- **Automation**: `editor.formatOnPaste: true`, `formatOnSave: true` — Keeps code consistent automatically. (`formatOnType` is intentionally off to avoid mid-typing interruptions.)
 - **Auto-Fix**: `editor.codeActionsOnSave` — Runs `source.fixAll.eslint` and `source.sortImports` on every save.
 
 ### 💾 Files & Terminal
@@ -172,6 +152,7 @@ This setup comes with a curated list of extensions to supercharge your developme
 - **[Catppuccin Icons](https://marketplace.visualstudio.com/items?itemName=catppuccin.catppuccin-vsc-icons)** (`catppuccin.catppuccin-vsc-icons`): Matching icons for a cohesive look.
 - **[Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)** (`dracula-theme.theme-dracula`): A dark theme for many editors, shells, and more.
 - **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=pkief.material-icon-theme)** (`pkief.material-icon-theme`): Material Design Icons.
+- **[Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)** (`antfu.iconify`): Inline icon preview for Iconify (great for Astro/React).
 
 ### 🌐 Web Development
 
@@ -184,9 +165,12 @@ This setup comes with a curated list of extensions to supercharge your developme
 - **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.liveserver)** (`ritwickdey.liveserver`): Launch a local development server with live reload.
 - **[Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)** (`wix.vscode-import-cost`): Display import size of the package.
 - **[JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.javascriptsnippets)** (`xabikos.javascriptsnippets`): JavaScript snippets (ES6).
+- **[ES7+ React/Redux Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)** (`dsznajder.es7-react-js-snippets`): React, Redux and React Native snippets.
 - **[MDX](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx)** (`unifiedjs.vscode-mdx`): MDX language support.
 - **[Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)** (`astro-build.astro-vscode`): Language support for Astro.
 - **[TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)** (`ms-vscode.vscode-typescript-next`): TypeScript Nightly build.
+- **[Prisma](https://marketplace.visualstudio.com/items?itemName=prisma.prisma)** (`prisma.prisma`): Syntax highlighting, formatting, and IntelliSense for Prisma schema.
+- **[Vitest](https://marketplace.visualstudio.com/items?itemName=ZixuanChen.vitest-explorer)** (`ZixuanChen.vitest-explorer`): Run and debug Vitest tests directly in VS Code.
 
 ### 🐍 Python
 
@@ -268,6 +252,47 @@ This setup includes a `custom.code-snippets` file packed with productivity boost
 
 ---
 
+## 🔧 Dev Toolchain
+
+This repository uses a lightweight toolchain to keep contributions consistent.
+
+### Commit Convention
+
+All commits must follow [Conventional Commits](https://www.conventionalcommits.org/). This is enforced automatically via `commitlint` on every `git commit`.
+
+| Type       | When to use                                           |
+| :--------- | :---------------------------------------------------- |
+| `feat`     | New extension, setting, snippet, or task added        |
+| `fix`      | Correction of an existing setting or misconfiguration |
+| `docs`     | README or documentation changes only                  |
+| `style`    | Formatting or whitespace (no logic change)            |
+| `refactor` | Restructuring without adding features or fixing bugs  |
+| `chore`    | Dependency updates, scripts, config                   |
+| `revert`   | Reverting a previous commit                           |
+
+**Examples:**
+
+```bash
+git commit -m "feat: add prisma extension to recommendations"
+git commit -m "fix: set formatOnSave to true in settings.json"
+git commit -m "docs: add linux setup instructions to readme"
+```
+
+### Setup Toolchain Locally
+
+Requires [pnpm](https://pnpm.io/). After cloning:
+
+```bash
+pnpm install   # installs husky, lint-staged, commitlint, prettier
+```
+
+Git hooks are activated automatically via `husky`. On every commit:
+
+- **pre-commit**: Prettier formats all staged JSON and Markdown files via `lint-staged`.
+- **commit-msg**: `commitlint` validates the commit message format.
+
+---
+
 ## 🧪 Playground
 
 A `playground.js` file is included in the root of this repository. Open it to instantly test:
@@ -283,13 +308,19 @@ A `playground.js` file is included in the root of this repository. Open it to in
 ```text
 .
 ├── .editorconfig              # Coding style configuration
+├── .husky/                    # Git hooks (commitlint + lint-staged)
+│   ├── commit-msg             # Validates commit messages (Conventional Commits)
+│   └── pre-commit             # Runs lint-staged (prettier) on staged files
+├── commitlint.config.js       # Commitlint rules (Conventional Commits)
+├── package.json               # Dev toolchain: pnpm, husky, lint-staged, prettier
+├── install.sh                 # One-command installer (macOS & Linux)
 ├── playground.js              # Theme & Font testing playground
 ├── README.md                  # Documentation
 ├── assets/                    # Project images
 └── src/
-    ├── extensions.txt         # Legacy list of extensions
+    ├── extensions.txt         # Full list of extensions (for install.sh)
     └── .vscode/
-        ├── extensions.json    # Recommended extensions
+        ├── extensions.json    # Recommended extensions (auto-prompted by VS Code)
         ├── settings.json      # Main VS Code configuration
         ├── tasks.json         # Automation tasks
         ├── keybindings.json   # Optional keybindings
@@ -306,12 +337,9 @@ A `playground.js` file is included in the root of this repository. Open it to in
 
 ---
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/antoniofuscaldo">Antonio Fuscaldo</a>
-</p>
+Made with ❤️ by [Antonio Fuscaldo](https://github.com/antoniofuscaldo)
 
 ---
 
-<sub align="center" style="font-size: 10px; color: gray;">
-<em>Visual Studio Code, VS Code, and the Visual Studio Code icon are trademarks of Microsoft Corporation. All rights reserved.</em>
-</sub>
+> **Disclaimer**: Visual Studio Code, VS Code, and the Visual Studio Code icon
+> are trademarks of Microsoft Corporation. All rights reserved.

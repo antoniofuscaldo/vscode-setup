@@ -46,9 +46,9 @@
       "  item.addEventListener(\"click\", function() {",
       "        document.body.classList.toggle('menu-open');",
       "  });",
-      "</script>"
+      "</script>",
     ],
-    "description": "Header menu"
+    "description": "Header menu",
   },
   "Html Box": {
     "prefix": "h-box",
@@ -56,9 +56,9 @@
       "<div class=\"box$1\">",
       "  <h3> $2 Lorem </h3>",
       "  <p> test </p>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Box"
+    "description": "Box",
   },
 
   "Html Cover": {
@@ -70,9 +70,9 @@
       "    <h2> Subtitie </h2>",
       "  <a href=\"#\" class=\"button\">Call to action</a>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Cover"
+    "description": "Cover",
   },
 
   "Html Card": {
@@ -82,35 +82,35 @@
       "  <div class=\"card$1__img\" style=\"background-image: url('http://afmarchetti.github.io/alux/image.jpg');\"></div>",
       "  <h3> Lorem </h3>",
       "  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quidem provident totam, possimus reprehenderit repellat. Omnis, iusto officiis harum reprehenderit enim asperiores ex ducimus. Possimus quae, numquam at molestias aut?</p>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Card"
+    "description": "Card",
   },
 
   "Html Title": {
     "prefix": "h-tit",
     "body": ["  <h3 class=\"tit\">${1:lorem ispum dot siam}</h3>"],
-    "description": "Title"
+    "description": "Title",
   },
 
   "Subtitle": {
     "prefix": "h-sub",
     "body": ["  <p class=\"sub\">${1:lorem ispum dot siam}</p>"],
-    "description": "Subtitle"
+    "description": "Subtitle",
   },
 
   "Text": {
     "prefix": "h-text",
     "body": [
-      "  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quidem provident totam, possimus reprehenderit repellat. Omnis, iusto officiis harum reprehenderit enim asperiores ex ducimus. Possimus quae, numquam at molestias aut?</p>"
+      "  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quidem provident totam, possimus reprehenderit repellat. Omnis, iusto officiis harum reprehenderit enim asperiores ex ducimus. Possimus quae, numquam at molestias aut?</p>",
     ],
-    "description": "Text"
+    "description": "Text",
   },
 
   "Html Button": {
     "prefix": "h-btn",
     "body": ["  <a class=\"btn$1\" href=\"\">Lorem</a>"],
-    "description": "Button"
+    "description": "Button",
   },
 
   "Html Col 1": {
@@ -120,9 +120,9 @@
       "  <div class=\"col-100\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 1"
+    "description": "Col 1",
   },
 
   "Html Col 2": {
@@ -135,9 +135,9 @@
       "  <div class=\"col-50\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 2"
+    "description": "Col 2",
   },
 
   "Html Col 3": {
@@ -153,9 +153,9 @@
       "  <div class=\"col-33\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 3"
+    "description": "Col 3",
   },
 
   "Html Col 4": {
@@ -174,39 +174,39 @@
       "  <div class=\"col-25\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 4"
+    "description": "Col 4",
   },
 
   "Html Comment": {
     "prefix": "h-com",
     "body": ["<!-- $1 -->"],
-    "description": "Comment"
+    "description": "Comment",
   },
 
   "Style": {
     "prefix": "h-style",
     "body": ["<link rel=\"stylesheet\" href=\"$1\">"],
-    "description": "Style"
+    "description": "Style",
   },
 
   "Jquery": {
     "prefix": "h-jquery",
     "body": [
       "<!-- Jquery -->",
-      "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js\"></script>"
+      "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js\"></script>",
     ],
-    "description": "Jquery"
+    "description": "Jquery",
   },
 
   "Google Font": {
     "prefix": "h-googlefont",
     "body": [
       "<!-- Google Font -->",
-      "<link rel=\"stylesheet\"  href=\"//fonts.googleapis.com/css?family=Heebo:400,700\" type=\"text/css\" />"
+      "<link rel=\"stylesheet\"  href=\"//fonts.googleapis.com/css?family=Heebo:400,700\" type=\"text/css\" />",
     ],
-    "description": "Google Font"
+    "description": "Google Font",
   },
 
   "Html Template": {
@@ -230,9 +230,9 @@
       "  <script src=\"https://code.jquery.com/jquery-1.12.4.min.js\"></script>",
       "",
       "</body>",
-      "</html>"
+      "</html>",
     ],
-    "description": "Template"
+    "description": "Template",
   },
 
   "Html Template v2": {
@@ -259,9 +259,9 @@
       "   <script> /* js code */ </script>",
       "",
       "</body>",
-      "</html>"
+      "</html>",
     ],
-    "description": "Template v2"
+    "description": "Template v2",
   },
 
   // CSS Snipet
@@ -298,38 +298,38 @@
       "",
       "  .header__quick{display: flex; justify-content: flex-end; width: 50%;}",
       "",
-      "}"
+      "}",
     ],
-    "description": "FlexBox"
+    "description": "FlexBox",
   },
   "FlexBox": {
     "prefix": "c-fb-flexbox",
     "body": ["display:flex;justify-content:center;align-items: center;"],
-    "description": "FlexBox"
+    "description": "FlexBox",
   },
 
   "Background Image": {
     "prefix": "c-bgimg",
     "body": [
-      "background: url($1) no-repeat center center; background-size:cover;"
+      "background: url($1) no-repeat center center; background-size:cover;",
     ],
-    "description": "Background Image"
+    "description": "Background Image",
   },
 
   "Background Gradient": {
     "prefix": "c-bg-gradient",
     "body": [
-      "background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%), url($1) no-repeat center center;"
+      "background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%), url($1) no-repeat center center;",
     ],
-    "description": "Background Gradient"
+    "description": "Background Gradient",
   },
 
   "Box": {
     "prefix": "c-box",
     "body": [
-      ".box$1{  text-align: center; padding:10px; margin:10px; min-height:10px; display:flex; flex-direction:column; justify-content:center ;}"
+      ".box$1{  text-align: center; padding:10px; margin:10px; min-height:10px; display:flex; flex-direction:column; justify-content:center ;}",
     ],
-    "description": "Box"
+    "description": "Box",
   },
 
   "Cover": {
@@ -341,9 +341,9 @@
       "  display:flex; flex-direction:column; justify-content:center; ",
       "  background-position: center center; background-size:cover;",
       "}",
-      ".cover * {color:#fff}"
+      ".cover * {color:#fff}",
     ],
-    "description": "Cover"
+    "description": "Cover",
   },
 
   "Card": {
@@ -351,18 +351,18 @@
     "body": [
       ".card$1{padding:20px;box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 10px;overflow: hidden;margin: 0 15px 30px 15px; min-height: 450px}",
       ".card$1__img{min-height:200px;display: block;background-position: center center; background-size:cover;margin: -20px -20px 20px -20px;}",
-      ""
+      "",
     ],
-    "description": "Card"
+    "description": "Card",
   },
 
   "Reset Css": {
     "prefix": "c-reset",
     "body": [
       "/* ! Reset */",
-      "body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}"
+      "body, html{ font-family: 'Intro', Arial, Helvetica, sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}",
     ],
-    "description": "Reset Css"
+    "description": "Reset Css",
   },
 
   "Helpers": {
@@ -400,9 +400,9 @@
       ".text-center { text-align: center; }",
       ".text-right { text-align: right; }",
       ".text-left { text-align: left; }",
-      ".img-res { width: 100%; height: auto; margin-bottom: 20px;vertical-align: middle;}"
+      ".img-res { width: 100%; height: auto; margin-bottom: 20px;vertical-align: middle;}",
     ],
-    "description": "Helpers"
+    "description": "Helpers",
   },
 
   "Title System": {
@@ -413,9 +413,9 @@
       "h2, .text-2 {font-size: 2.4rem;margin-bottom:1rem}",
       "h3, .text-3  {font-size: 1.8rem;margin-bottom:1rem}",
       "h4, p, .text-4 {font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}",
-      "a{color: coral}"
+      "a{color: coral}",
     ],
-    "description": "Title System"
+    "description": "Title System",
   },
 
   "Button System": {
@@ -426,32 +426,32 @@
       "  text-decoration: none;padding: 14px 25px; display: inline-block;",
       "  border-radius: 4px; font-weight: 700;",
       "}",
-      ".button:hover{ background: #444; }"
+      ".button:hover{ background: #444; }",
     ],
-    "description": "Button System"
+    "description": "Button System",
   },
 
   "Button": {
     "prefix": "c-btn",
     "body": [
-      ".btn$1{ padding: 10px 20px; font-size: 16px; background:#000; color:#fff;border-radius:4px; }"
+      ".btn$1{ padding: 10px 20px; font-size: 16px; background:#000; color:#fff;border-radius:4px; }",
     ],
-    "description": "Button"
+    "description": "Button",
   },
 
   "Block Basic": {
     "prefix": "c-block",
     "body": [
       ".${1:block}{width: 100%; height: 300px; background: #333; display: flex; align-items: center; justify-content: center;}",
-      ".${1:block}__content{color:#fff; text-align:center}"
+      ".${1:block}__content{color:#fff; text-align:center}",
     ],
-    "description": "Block Basic"
+    "description": "Block Basic",
   },
 
   "Border": {
     "prefix": "c-bd",
     "body": ["border: 1px solid red;"],
-    "description": "Border"
+    "description": "Border",
   },
 
   "Comment Big": {
@@ -459,21 +459,21 @@
     "body": [
       "/* -------------------------------------------------------------------------------- */",
       "/* ! $1 */",
-      "/* -------------------------------------------------------------------------------- */"
+      "/* -------------------------------------------------------------------------------- */",
     ],
-    "description": "Comment Big"
+    "description": "Comment Big",
   },
 
   "Comment Code": {
     "prefix": "c-com",
     "body": ["/* ! $1 */"],
-    "description": "Comment Code"
+    "description": "Comment Code",
   },
 
   "Media Query": {
     "prefix": "c-mediaquery",
     "body": ["@media (max-width: 768px) {", "  $1", "}"],
-    "description": "Media Query"
+    "description": "Media Query",
   },
 
   "WP Child Theme": {
@@ -489,9 +489,9 @@
       "Version: 1.0.0",
       "Text Domain: theme-child",
       "",
-      "*/"
+      "*/",
     ],
-    "description": "Child Theme"
+    "description": "Child Theme",
   },
 
   "Animate All": {
@@ -501,9 +501,9 @@
       "      -moz-transition: all 0.3s ease-in-out;",
       "      -ms-transition: all 0.3s ease-in-out;",
       "      -o-transition: all 0.3s ease-in-out;",
-      "      transition: all 0.3s ease-in-out; }"
+      "      transition: all 0.3s ease-in-out; }",
     ],
-    "description": "Animate All"
+    "description": "Animate All",
   },
 
   "Border Box": {
@@ -515,9 +515,9 @@
       "  -webkit-box-sizing: border-box;",
       "     -moz-box-sizing: border-box;",
       "          box-sizing: border-box;",
-      "}"
+      "}",
     ],
-    "description": "Border Box"
+    "description": "Border Box",
   },
 
   "Grid System": {
@@ -555,45 +555,45 @@
       "    .sma-33 { width: 33.33%; }",
       "    .sma-50 { width: 50%; }",
       "    .sma-100 { width: 100%; }",
-      "}"
+      "}",
     ],
-    "description": "Grid System"
+    "description": "Grid System",
   },
 
   "Font Family": {
     "prefix": "c-fontfamily",
     "body": ["font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;"],
-    "description": "Font Family"
+    "description": "Font Family",
   },
 
   "Translate": {
     "prefix": "c-translate",
     "body": ["transform: translateY(20px);"],
-    "description": "Translate"
+    "description": "Translate",
   },
 
   "Transition": {
     "prefix": "c-transition",
     "body": ["transition: all 1s cubic-bezier(.215, .61, .355, 1);"],
-    "description": "Transition"
+    "description": "Transition",
   },
 
   "Box Shadow": {
     "prefix": "c-boxshadow",
     "body": ["box-shadow: 0 5px 20px rgba(0,0,0,.05);"],
-    "description": "Box Shadow"
+    "description": "Box Shadow",
   },
 
   "Vertical Center": {
     "prefix": "c-verticalcenter",
     "body": ["display: flex; width: 100%; height: 100%; align-items: center;"],
-    "description": "Vertical Center"
+    "description": "Vertical Center",
   },
 
   "Animation": {
     "prefix": "c-animation",
     "body": ["animation: my-animation 5s 3 ease-in-out;"],
-    "description": "Animation"
+    "description": "Animation",
   },
 
   "Keyframe": {
@@ -608,16 +608,16 @@
       "  80%{transform: rotate(0deg);}",
       "  100% {transform: rotate(0deg);}",
       "",
-      "}"
+      "}",
     ],
-    "description": "Keyframe"
+    "description": "Keyframe",
   },
 
   // Java Snipet
   "console.log": {
     "prefix": "j-log",
     "body": ["console.log(${1:\"crash\"});$2"],
-    "description": "console.log"
+    "description": "console.log",
   },
 
   "Click Js": {
@@ -626,9 +626,9 @@
       "let ${1:item} = document.querySelector('.toggle-single');",
       "${1:item}.addEventListener(\"click\", function() {",
       "  ${1:item}.classList.toggle('toggle-active');",
-      "});"
+      "});",
     ],
-    "description": "Click Js"
+    "description": "Click Js",
   },
 
   "Js Scroll to element": {
@@ -649,21 +649,21 @@
       "    top: offsetTop,",
       "    behavior: \"smooth\"",
       "  });",
-      "}"
+      "}",
     ],
-    "description": "Js Scroll to element"
+    "description": "Js Scroll to element",
   },
 
   "querySelectorAll": {
     "prefix": "j-selectall",
     "body": ["let items = document.querySelectorAll('${1:.selector}');"],
-    "description": "querySelectorAll"
+    "description": "querySelectorAll",
   },
 
   "querySelector": {
     "prefix": "j-select",
     "body": ["let items = document.querySelector('${1:.selector}');"],
-    "description": "querySelector"
+    "description": "querySelector",
   },
 
   "forEach": {
@@ -673,9 +673,9 @@
       "  item.addEventListener(\"click\", function() {",
       "    item.classList.toggle('toggle-active');",
       "  });",
-      "});"
+      "});",
     ],
-    "description": "forEach"
+    "description": "forEach",
   },
 
   "for of": {
@@ -685,9 +685,9 @@
       " item.addEventListener(\"click\", function() {",
       "   item.classList.toggle('toggle-active');",
       " });",
-      "}"
+      "}",
     ],
-    "description": "for of"
+    "description": "for of",
   },
 
   "Add class on Scroll": {
@@ -699,9 +699,9 @@
       "  } else {",
       "    document.body.classList.remove('scroll-down');",
       "  }",
-      "});"
+      "});",
     ],
-    "description": "Add class on Scroll"
+    "description": "Add class on Scroll",
   },
 
   "Observer": {
@@ -724,9 +724,9 @@
       "// apply",
       "elements_to_watch.forEach((element) => {",
       "  observer.observe(element); ",
-      "});"
+      "});",
     ],
-    "description": "Observe elements"
+    "description": "Observe elements",
   },
 
   "Comment Js": {
@@ -734,9 +734,9 @@
     "body": [
       "/*  -----------------------------------------------------------------------------------------------",
       "  $1",
-      "--------------------------------------------------------------------------------------------------- */"
+      "--------------------------------------------------------------------------------------------------- */",
     ],
-    "description": "Comment Js"
+    "description": "Comment Js",
   },
 
   //Gspa Snippets
@@ -744,17 +744,17 @@
   "Gsap Script": {
     "prefix": "gs-script",
     "body": [
-      "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js\" charset=\"utf-8\"></script>"
+      "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js\" charset=\"utf-8\"></script>",
     ],
-    "description": "Gsap Inlcude"
+    "description": "Gsap Inlcude",
   },
 
   "Scroll Trigger Script": {
     "prefix": "gs-scrolltrigger-script",
     "body": [
-      " <script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js\"></script>"
+      " <script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js\"></script>",
     ],
-    "description": "Scroll Trigger Inlcude"
+    "description": "Scroll Trigger Inlcude",
   },
 
   "Scroll Trigger Batch": {
@@ -766,25 +766,25 @@
       "onEnter: (elements, triggers) => {",
       "gsap.to(elements, { opacity: 1, stagger: 0.3, y:0, duration: 1.5,  ease: Power2.easeOut });",
       "}",
-      "});"
+      "});",
     ],
-    "description": "Scroll Trigger Batch"
+    "description": "Scroll Trigger Batch",
   },
 
   "Gsap Text Reveal": {
     "prefix": "gs-text-reveal",
     "body": [
-      "gsap.to(\".text-reveal\", { clipPath: \"polygon(0 0, 100% 0, 100% 100%, 0 100%)\", y:0, duration: 1, stagger: 0.7, ease: Power2.easeOut });"
+      "gsap.to(\".text-reveal\", { clipPath: \"polygon(0 0, 100% 0, 100% 100%, 0 100%)\", y:0, duration: 1, stagger: 0.7, ease: Power2.easeOut });",
     ],
-    "description": "Gsap Text Reveal"
+    "description": "Gsap Text Reveal",
   },
 
   "Gsap Fade In": {
     "prefix": "gs-fade-in",
     "body": [
-      "gsap.to(\".fade-in\", { opacity: 1, y:0, duration: 1, stagger: 0.3, ease: Power2.easeOut }, \"1\");"
+      "gsap.to(\".fade-in\", { opacity: 1, y:0, duration: 1, stagger: 0.3, ease: Power2.easeOut }, \"1\");",
     ],
-    "description": "Gsap Fade In"
+    "description": "Gsap Fade In",
   },
 
   "Gsap Timeline": {
@@ -792,9 +792,9 @@
     "body": [
       "let tl = gsap.timeline();",
       "tl.to(\".hero\", { opacity: 1, scale: 1, ease: Power2.easeOut, duration: 4 })",
-      ".to(\".menu\", {opacity:1, y: 20, stagger: 0.2, duration: 1.5, ease: Power2.easeOut});"
+      ".to(\".menu\", {opacity:1, y: 20, stagger: 0.2, duration: 1.5, ease: Power2.easeOut});",
     ],
-    "description": "Gsap Timeline"
+    "description": "Gsap Timeline",
   },
 
   //Jquery Snipepts
@@ -805,9 +805,9 @@
       "/* Open Panel */",
       "$( \".trigger\" ).on('click', function() {",
       "  $(\".target\").toggleClass(\"open\");",
-      "});"
+      "});",
     ],
-    "description": "Toggle jQuery"
+    "description": "Toggle jQuery",
   },
 
   "Scroll Down jQuery": {
@@ -818,9 +818,9 @@
       "  event.preventDefault();",
       "  //scroll down the panel",
       "  $(\"html, body\").animate({ scrollTop: $('#anchor').offset().top }, 700);",
-      "});"
+      "});",
     ],
-    "description": "Scroll Down jQuery"
+    "description": "Scroll Down jQuery",
   },
 
   "Scroll Class jQuery": {
@@ -835,9 +835,9 @@
       "  } else {",
       "    $(\"body\").removeClass( \"scroll-down\" );",
       "  }",
-      "});"
+      "});",
     ],
-    "description": "Scroll Class jQuery"
+    "description": "Scroll Class jQuery",
   },
 
   "Scroll Nav jQuery": {
@@ -850,15 +850,15 @@
       "    scrollTop: $(target).offset().top - 80",
       "  }, 300);",
       "  return false;",
-      "});"
+      "});",
     ],
-    "description": "Scroll Nav jQuery"
+    "description": "Scroll Nav jQuery",
   },
 
   "Document Ready jQuery": {
     "prefix": "jq-doc",
     "body": ["$( document ).ready(function() {", "  $1", "});"],
-    "description": "Document Ready jQuery"
+    "description": "Document Ready jQuery",
   },
 
   "Click jQuery": {
@@ -867,40 +867,40 @@
       "/* Click */",
       "$( \".trigger\" ).on('click', function() {",
       "  // do something",
-      "});"
+      "});",
     ],
-    "description": "Click jQuery"
+    "description": "Click jQuery",
   },
 
   "Add Class jQuery": {
     "prefix": "jq-addclass",
     "body": ["  $(\"body\").addClass( \"my-css-class\" );"],
-    "description": "Add Class jQuery"
+    "description": "Add Class jQuery",
   },
 
   "Remove Class jQuery": {
     "prefix": "jq-removeclass",
     "body": ["  $(\"body\").removeClass( \"my-css-class\" );"],
-    "description": "Remove Class jQuery"
+    "description": "Remove Class jQuery",
   },
 
   // PHP Snippet
   ".text.html.php": {
     "prefix": "p-tag",
     "body": ["<?php", "  $1", "?>"],
-    "description": ".text.html.php"
+    "description": ".text.html.php",
   },
 
   "Include": {
     "prefix": "p-include",
     "body": ["<?php include(\"$1\");?>"],
-    "description": "Include"
+    "description": "Include",
   },
 
   "Var Dump": {
     "prefix": "var_dump()",
     "body": ["var_dump($1)"],
-    "description": "Var Dump"
+    "description": "Var Dump",
   },
 
   "Prepare": {
@@ -912,9 +912,9 @@
       "  echo \"Data added successfully.\";",
       "} else {",
       "  die(\"Data add failed: \" . htmlspecialchars($$query->error));",
-      "}"
+      "}",
     ],
-    "description": "Prepare"
+    "description": "Prepare",
   },
 
   // WP Snippets
@@ -944,9 +944,9 @@
       "  <?php the_content(); ?>",
       "",
       "  <?php wp_reset_postdata(); ?>",
-      "  <?php endwhile; endif; ?>"
+      "  <?php endwhile; endif; ?>",
     ],
-    "description": "Custom Loop"
+    "description": "Custom Loop",
   },
 
   "Img": {
@@ -957,21 +957,21 @@
       "?>",
       "<div class=\"$1\" style=\"background: url(<?php echo $$image_attributes[0]; ?>) center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;\">",
       "  $2",
-      "</div>"
+      "</div>",
     ],
-    "description": "Img"
+    "description": "Img",
   },
 
   "Uri": {
     "prefix": "wp-uri",
     "body": ["<?php echo get_stylesheet_directory_uri(); ?>"],
-    "description": "Uri"
+    "description": "Uri",
   },
 
   "Header": {
     "prefix": "wp-header",
     "body": ["<?php get_header(); ?>"],
-    "description": "Header"
+    "description": "Header",
   },
 
   "Is Search": {
@@ -987,9 +987,9 @@
       "<?php single_month_title(' '); ?>",
       "<?php } else if ( is_archive() ){ ?>",
       "<?php post_type_archive_title(); ?>",
-      "<?php } ?>"
+      "<?php } ?>",
     ],
-    "description": "Is Search"
+    "description": "Is Search",
   },
 
   "Loop": {
@@ -1003,99 +1003,99 @@
       "  <p><?php previous_posts_link( 'Older posts' ); ?> - <?php next_posts_link( 'Newer posts' ); ?></p>",
       "<?php else : ?>",
       "  <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'slug-theme'); ?></p>",
-      "<?php endif; ?>"
+      "<?php endif; ?>",
     ],
-    "description": "Loop"
+    "description": "Loop",
   },
 
   "Post Class": {
     "prefix": "wp-post-class",
     "body": ["<?php post_class(); ?>"],
-    "description": "Post Class"
+    "description": "Post Class",
   },
 
   "Permalink": {
     "prefix": "wp-permalink",
     "body": ["<?php the_permalink(); ?>"],
-    "description": "Permalink"
+    "description": "Permalink",
   },
 
   "Title": {
     "prefix": "wp-title",
     "body": ["<?php the_title(); ?>"],
-    "description": "Title"
+    "description": "Title",
   },
 
   "Time": {
     "prefix": "wp-time",
     "body": ["<?php the_time('j M , Y') ?>"],
-    "description": "Time"
+    "description": "Time",
   },
 
   "Category": {
     "prefix": "wp-category",
     "body": ["<?php the_category(', '); ?>"],
-    "description": "Category"
+    "description": "Category",
   },
 
   "Excerpt": {
     "prefix": "wp-excerpt",
     "body": ["<?php the_excerpt();?>"],
-    "description": "Excerpt"
+    "description": "Excerpt",
   },
 
   "Sidebar": {
     "prefix": "wp-sidebar",
     "body": ["<?php get_sidebar(); ?>"],
-    "description": "Sidebar"
+    "description": "Sidebar",
   },
 
   "Footer": {
     "prefix": "wp-footer",
     "body": ["<?php get_footer(); ?>"],
-    "description": "Footer"
+    "description": "Footer",
   },
 
   "Language": {
     "prefix": "wp-lang",
     "body": ["<?php language_attributes();?>"],
-    "description": "Language"
+    "description": "Language",
   },
 
   "Description": {
     "prefix": "wp-desc",
     "body": ["<?php bloginfo( 'description' ); ?>"],
-    "description": "Description"
+    "description": "Description",
   },
 
   "Head": {
     "prefix": "wp-head",
     "body": ["<?php wp_head(); ?>"],
-    "description": "Head"
+    "description": "Head",
   },
 
   "Foot": {
     "prefix": "wp-foot",
     "body": ["<?php wp_footer(); ?>"],
-    "description": "Foot"
+    "description": "Foot",
   },
 
   "Body": {
     "prefix": "wp-body",
     "body": ["<?php body_class(); ?>"],
-    "description": "Body"
+    "description": "Body",
   },
 
   "Home": {
     "prefix": "wp-home",
     "body": ["<?php echo home_url(); ?>"],
-    "description": "Home"
+    "description": "Home",
   },
 
   "Blog Title": {
     "prefix": "wp-blog-tit",
     "body": ["<?php bloginfo('title'); ?>"],
-    "description": "Blog Title"
+    "description": "Blog Title",
   },
 
   "Menu": {
@@ -1108,15 +1108,15 @@
       "  'container' => false,",
       "  'items_wrap' => '<ul>%3$s</ul>'",
       "));",
-      "?>"
+      "?>",
     ],
-    "description": "Menu"
+    "description": "Menu",
   },
 
   "Name": {
     "prefix": "wp-name",
     "body": ["<?php bloginfo('name'); ?>"],
-    "description": "Name"
+    "description": "Name",
   },
 
   "Is Page Template": {
@@ -1126,17 +1126,17 @@
       "",
       "  <!-- content to show -->",
       "",
-      "<?php } ?>"
+      "<?php } ?>",
     ],
-    "description": "Is Page Template"
+    "description": "Is Page Template",
   },
 
   "Copyright": {
     "prefix": "wp-copy",
     "body": [
-      "<?php esc_html_e('&copy; Copyright ', 'slug-theme'); ?> <?php echo date(\"o\");?>"
+      "<?php esc_html_e('&copy; Copyright ', 'slug-theme'); ?> <?php echo date(\"o\");?>",
     ],
-    "description": "Copyright"
+    "description": "Copyright",
   },
 
   "Theme Setup": {
@@ -1174,9 +1174,9 @@
       "",
       "}",
       "add_action( 'after_setup_theme', 'slug-theme_setup' );",
-      "?>"
+      "?>",
     ],
-    "description": "Theme Setup"
+    "description": "Theme Setup",
   },
 
   "Sidebar Setup": {
@@ -1193,9 +1193,9 @@
       "",
       "}",
       "add_action( 'widgets_init', 'slug-theme_sidebars' );",
-      "?>"
+      "?>",
     ],
-    "description": "Sidebar Setup"
+    "description": "Sidebar Setup",
   },
 
   "Script Setup": {
@@ -1213,9 +1213,9 @@
       "  }",
       "}",
       "add_action( 'wp_enqueue_scripts', 'slug-theme_scripts' );",
-      "?>"
+      "?>",
     ],
-    "description": "Script Setup"
+    "description": "Script Setup",
   },
 
   "Style Setup": {
@@ -1232,62 +1232,62 @@
       "   }",
       "}",
       "add_action( 'wp_enqueue_scripts', 'slug-theme_styles' );",
-      "?>"
+      "?>",
     ],
-    "description": "Style Setup"
+    "description": "Style Setup",
   },
 
   "Thumbnail": {
     "prefix": "wp-thumbnail",
     "body": [
-      "<?php the_post_thumbnail('thumbnail', array('class' => 'img-res','alt' => get_the_title())); ?>"
+      "<?php the_post_thumbnail('thumbnail', array('class' => 'img-res','alt' => get_the_title())); ?>",
     ],
-    "description": "Thumbnail"
+    "description": "Thumbnail",
   },
 
   "Content": {
     "prefix": "wp-content",
     "body": ["<?php the_content(esc_html__('Read More...', 'slug-theme'));?>"],
-    "description": "Content"
+    "description": "Content",
   },
 
   "Page Link": {
     "prefix": "wp-pagelink",
     "body": ["<?php wp_link_pages('pagelink=Page %'); ?>"],
-    "description": "Page Link"
+    "description": "Page Link",
   },
 
   "Tag": {
     "prefix": "wp-tag",
     "body": ["<?php the_tags('', ', ', ''); ?>"],
-    "description": "Tag"
+    "description": "Tag",
   },
 
   "Comments": {
     "prefix": "wp-comment",
     "body": ["<?php comments_template(); ?>"],
-    "description": "Comments"
+    "description": "Comments",
   },
 
   "Dinamic Sidebar": {
     "prefix": "wp-dinamicsidebar",
     "body": [
       "<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('primary') ) : ?>",
-      "<?php endif; ?>"
+      "<?php endif; ?>",
     ],
-    "description": "Dinamic Sidebar"
+    "description": "Dinamic Sidebar",
   },
 
   "Text Translate": {
     "prefix": "wp-text-translate",
     "body": ["<?php esc_html_e( 'Results for: ', 'nextframe'); ?>"],
-    "description": "Text Translate"
+    "description": "Text Translate",
   },
 
   "Search": {
     "prefix": "wp-search",
     "body": ["<?php get_search_form(); ?>"],
-    "description": "Search"
+    "description": "Search",
   },
 
   "Search Form": {
@@ -1296,9 +1296,9 @@
       "<form class=\"search-form\" role=\"search\" method=\"get\" action=\"<?php echo home_url(); ?>\">",
       "  <input  type=\"text\" placeholder=\"<?php esc_html_e('Search', 'slug-theme'); ?>\" name=\"s\">",
       "  <button type=\"submit\"><i class=\"fa fa-search\"></i></button>",
-      "</form>"
+      "</form>",
     ],
-    "description": "Search Form"
+    "description": "Search Form",
   },
 
   "Comments Template": {
@@ -1362,9 +1362,9 @@
       "post_comments_feed_link(''.esc_html__('Comments RSS Feed', 'nakedpress').'');",
       "echo '</div>';",
       "",
-      "?>"
+      "?>",
     ],
-    "description": "Comments Template"
+    "description": "Comments Template",
   },
 
   "404": {
@@ -1372,9 +1372,9 @@
     "body": [
       "<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'slug-theme' ); ?></h1>",
       "<h2><?php esc_html_e( '404 Error', 'slug-theme' ); ?></h2>",
-      "<p><?php esc_html_e( 'The page you are trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for.', 'slug-theme' ); ?></p> "
+      "<p><?php esc_html_e( 'The page you are trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for.', 'slug-theme' ); ?></p> ",
     ],
-    "description": "404"
+    "description": "404",
   },
 
   "Walker": {
@@ -1464,21 +1464,21 @@
       "  }",
       "",
       "} // Walker_Nav_Menu",
-      "?>"
+      "?>",
     ],
-    "description": "Walker"
+    "description": "Walker",
   },
 
   "Include in functions.php": {
     "prefix": "wp-incfunctions",
     "body": ["require_once('inc/nakedpress_navwalker.php');"],
-    "description": "Include in functions.php"
+    "description": "Include in functions.php",
   },
 
   "Include Parts": {
     "prefix": "wp-inc",
     "body": ["<?php get_template_part('inc/example-cover'); ?>"],
-    "description": "Include Parts"
+    "description": "Include Parts",
   },
 
   "Child Theme": {
@@ -1495,9 +1495,9 @@
       "    wp_get_theme()->get('Version')",
       "  );",
       "",
-      "} ?>"
+      "} ?>",
     ],
-    "description": "Child Theme"
+    "description": "Child Theme",
   },
 
   "Template": {
@@ -1509,9 +1509,9 @@
       "  * Template Name: Template Name",
       "  *",
       "  */",
-      "?>"
+      "?>",
     ],
-    "description": "Template"
+    "description": "Template",
   },
 
   "Custom Shortcode": {
@@ -1525,9 +1525,9 @@
       "",
       "  return $$buffer;",
       "}",
-      "add_shortcode('nameshortcode', 'custom_shortcode');"
+      "add_shortcode('nameshortcode', 'custom_shortcode');",
     ],
-    "description": "Custom Shortcode"
+    "description": "Custom Shortcode",
   },
 
   "Custom Color Palette Gutenberg": {
@@ -1561,28 +1561,28 @@
       "     ]",
       "   );",
       "}",
-      "add_action( 'after_setup_theme', 'nakedbase_custom_gutenberg_color_palette' );"
+      "add_action( 'after_setup_theme', 'nakedbase_custom_gutenberg_color_palette' );",
     ],
-    "description": "Custom Color Palette Gutenberg"
+    "description": "Custom Color Palette Gutenberg",
   },
 
   "Logged In": {
     "prefix": "wp-logged-in",
     "body": ["<?php if ( is_user_logged_in() ) { ?> <?php } ?>"],
-    "description": "Logged In"
+    "description": "Logged In",
   },
 
   "Comment Php": {
     "prefix": "p-comment",
     "body": ["/*", " * @functions ", " * @description ", " *", " */"],
-    "description": "Comment with description in php"
+    "description": "Comment with description in php",
   },
 
   // HTML Snipet variant
   "Comment": {
     "prefix": "h-com",
     "body": ["<!-- $1 -->"],
-    "description": "Comment"
+    "description": "Comment",
   },
 
   "Col 1": {
@@ -1592,9 +1592,9 @@
       "  <div class=\"col-100\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 1"
+    "description": "Col 1",
   },
 
   "Col 2": {
@@ -1607,9 +1607,9 @@
       "  <div class=\"col-50\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 2"
+    "description": "Col 2",
   },
 
   "Col 3": {
@@ -1625,9 +1625,9 @@
       "  <div class=\"col-33\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 3"
+    "description": "Col 3",
   },
 
   "Col 4": {
@@ -1646,8 +1646,8 @@
       "  <div class=\"col-25\">",
       "    <h3> Lorem </h3>",
       "  </div>",
-      "</div>"
+      "</div>",
     ],
-    "description": "Col 4"
-  }
+    "description": "Col 4",
+  },
 }

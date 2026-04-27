@@ -51,8 +51,13 @@
     "vscjava.vscode-java-upgrade",
     "vscjava.vscode-maven",
     "vunguyentuan.vscode-postcss",
+    "wix.vscode-import-cost",
     "xabikos.javascriptsnippets",
     "yoavbls.pretty-ts-errors",
-    "yzhang.markdown-all-in-one"
+    "yzhang.markdown-all-in-one",
+    "dsznajder.es7-react-js-snippets",
+    "prisma.prisma",
+    "antfu.iconify",
+    "ZixuanChen.vitest-explorer"
   ]
 }

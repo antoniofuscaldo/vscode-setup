@@ -252,62 +252,62 @@ through `src/.vscode/extensions.json`.
 
 ### Full Extension List
 
-| Extension                  | ID                                              |
-| :------------------------- | :---------------------------------------------- |
-| Better Comments            | `aaron-bond.better-comments`                    |
-| Astro                      | `astro-build.astro-vscode`                      |
-| Tailwind CSS IntelliSense  | `bradlc.vscode-tailwindcss`                     |
-| Catppuccin Theme           | `catppuccin.catppuccin-vsc`                     |
-| Catppuccin Icons           | `catppuccin.catppuccin-vsc-icons`               |
-| PostCSS Language Support   | `csstools.postcss`                              |
-| ESLint                     | `dbaeumer.vscode-eslint`                        |
-| Dash                       | `deerawan.vscode-dash`                          |
-| Docker                     | `docker.docker`                                 |
-| Dracula Theme              | `dracula-theme.theme-dracula`                   |
-| EditorConfig               | `editorconfig.editorconfig`                     |
-| Prettier                   | `esbenp.prettier-vscode`                        |
-| Auto Rename Tag            | `formulahendry.auto-rename-tag`                 |
-| Code Runner                | `formulahendry.code-runner`                     |
-| GitHub Actions             | `github.vscode-github-actions`                  |
-| GitHub Pull Requests       | `github.vscode-pull-request-github`             |
-| Gemini Code Assist         | `google.geminicodeassist`                       |
-| Bootstrap IntelliSense     | `hossaini.bootstrap-intellisense`               |
-| CodeTime                   | `jannchie.codetime`                             |
-| Rainbow CSV                | `mechatroner.rainbow-csv`                       |
-| Mintlify Doc Writer        | `mintlify.document`                             |
-| Containers                 | `ms-azuretools.vscode-containers`               |
-| Docker for VS Code         | `ms-azuretools.vscode-docker`                   |
-| debugpy                    | `ms-python.debugpy`                             |
-| Python                     | `ms-python.python`                              |
-| Pylance                    | `ms-python.vscode-pylance`                      |
-| Python Environment Manager | `ms-python.vscode-python-envs`                  |
-| Dev Containers             | `ms-vscode-remote.remote-containers`            |
-| Remote SSH                 | `ms-vscode-remote.remote-ssh`                   |
-| Remote SSH Edit            | `ms-vscode-remote.remote-ssh-edit`              |
-| Remote Explorer            | `ms-vscode.remote-explorer`                     |
-| TypeScript Nightly         | `ms-vscode.vscode-typescript-next`              |
-| Document This              | `oouo-diogo-perdigao.docthis`                   |
-| Material Icon Theme        | `pkief.material-icon-theme`                     |
-| Java                       | `redhat.java`                                   |
-| Live Server                | `ritwickdey.liveserver`                         |
-| Markdown Preview Enhanced  | `shd101wyy.markdown-preview-enhanced`           |
-| Code Spell Checker         | `streetsidesoftware.code-spell-checker`         |
-| Italian Spell Checker      | `streetsidesoftware.code-spell-checker-italian` |
-| Stylelint                  | `stylelint.vscode-stylelint`                    |
-| MDX                        | `unifiedjs.vscode-mdx`                          |
-| Error Lens                 | `usernamehw.errorlens`                          |
-| Migrate Java to Azure      | `vscjava.migrate-java-to-azure`                 |
-| Gradle for Java            | `vscjava.vscode-gradle`                         |
-| Debugger for Java          | `vscjava.vscode-java-debug`                     |
-| Project Manager for Java   | `vscjava.vscode-java-dependency`                |
-| Extension Pack for Java    | `vscjava.vscode-java-pack`                      |
-| Test Runner for Java       | `vscjava.vscode-java-test`                      |
-| Java Upgrade               | `vscjava.vscode-java-upgrade`                   |
-| Maven for Java             | `vscjava.vscode-maven`                          |
-| PostCSS Language Support   | `vunguyentuan.vscode-postcss`                   |
-| JavaScript Snippets        | `xabikos.javascriptsnippets`                    |
-| Pretty TypeScript Errors   | `yoavbls.pretty-ts-errors`                      |
-| Markdown All in One        | `yzhang.markdown-all-in-one`                    |
+| Extension                  | ID                                              | Description                                  |
+| :------------------------- | :---------------------------------------------- | :------------------------------------------- |
+| Better Comments            | `aaron-bond.better-comments`                    | Highlights categorized comments in code.     |
+| Astro                      | `astro-build.astro-vscode`                      | Adds Astro language support and tooling.     |
+| Tailwind CSS IntelliSense  | `bradlc.vscode-tailwindcss`                     | Completes Tailwind classes and hints.        |
+| Catppuccin Theme           | `catppuccin.catppuccin-vsc`                     | Applies the Catppuccin editor theme.         |
+| Catppuccin Icons           | `catppuccin.catppuccin-vsc-icons`               | Adds matching Catppuccin file icons.         |
+| PostCSS Language Support   | `csstools.postcss`                              | Improves PostCSS syntax support.             |
+| ESLint                     | `dbaeumer.vscode-eslint`                        | Shows JavaScript and TypeScript lint issues. |
+| Dash                       | `deerawan.vscode-dash`                          | Opens API documentation in Dash.             |
+| Docker                     | `docker.docker`                                 | Adds Docker files and container tooling.     |
+| Dracula Theme              | `dracula-theme.theme-dracula`                   | Provides an alternate polished dark theme.   |
+| EditorConfig               | `editorconfig.editorconfig`                     | Applies shared `.editorconfig` rules.        |
+| Prettier                   | `esbenp.prettier-vscode`                        | Formats code with Prettier.                  |
+| Auto Rename Tag            | `formulahendry.auto-rename-tag`                 | Keeps paired HTML and XML tags synced.       |
+| Code Runner                | `formulahendry.code-runner`                     | Runs snippets and single files quickly.      |
+| GitHub Actions             | `github.vscode-github-actions`                  | Helps author and inspect workflow files.     |
+| GitHub Pull Requests       | `github.vscode-pull-request-github`             | Integrates GitHub PRs and issues in VS Code. |
+| Gemini Code Assist         | `google.geminicodeassist`                       | Adds opt-in Gemini AI assistance.            |
+| Bootstrap IntelliSense     | `hossaini.bootstrap-intellisense`               | Completes Bootstrap classes and utilities.   |
+| CodeTime                   | `jannchie.codetime`                             | Tracks coding activity and focus time.       |
+| Rainbow CSV                | `mechatroner.rainbow-csv`                       | Colors CSV columns and adds table tools.     |
+| Mintlify Doc Writer        | `mintlify.document`                             | Helps generate and maintain docs.            |
+| Containers                 | `ms-azuretools.vscode-containers`               | Adds container management features.          |
+| Docker for VS Code         | `ms-azuretools.vscode-docker`                   | Supports Dockerfiles, Compose, and images.   |
+| debugpy                    | `ms-python.debugpy`                             | Provides Python debugging support.           |
+| Python                     | `ms-python.python`                              | Adds core Python language tooling.           |
+| Pylance                    | `ms-python.vscode-pylance`                      | Adds fast Python analysis and IntelliSense.  |
+| Python Environment Manager | `ms-python.vscode-python-envs`                  | Manages Python environments from VS Code.    |
+| Dev Containers             | `ms-vscode-remote.remote-containers`            | Opens projects inside dev containers.        |
+| Remote SSH                 | `ms-vscode-remote.remote-ssh`                   | Connects VS Code to remote machines via SSH. |
+| Remote SSH Edit            | `ms-vscode-remote.remote-ssh-edit`              | Edits Remote SSH configuration files.        |
+| Remote Explorer            | `ms-vscode.remote-explorer`                     | Browses remote targets in one place.         |
+| TypeScript Nightly         | `ms-vscode.vscode-typescript-next`              | Uses the latest TypeScript language service. |
+| Document This              | `oouo-diogo-perdigao.docthis`                   | Generates JSDoc comments quickly.            |
+| Material Icon Theme        | `pkief.material-icon-theme`                     | Provides an alternate file icon set.         |
+| Java                       | `redhat.java`                                   | Adds Java language server support.           |
+| Live Server                | `ritwickdey.liveserver`                         | Serves static pages with live reload.        |
+| Markdown Preview Enhanced  | `shd101wyy.markdown-preview-enhanced`           | Adds richer Markdown previews.               |
+| Code Spell Checker         | `streetsidesoftware.code-spell-checker`         | Checks English spelling in text and code.    |
+| Italian Spell Checker      | `streetsidesoftware.code-spell-checker-italian` | Adds Italian spelling support.               |
+| Stylelint                  | `stylelint.vscode-stylelint`                    | Shows CSS and stylesheet lint issues.        |
+| MDX                        | `unifiedjs.vscode-mdx`                          | Adds MDX syntax and language support.        |
+| Error Lens                 | `usernamehw.errorlens`                          | Shows diagnostics directly inline.           |
+| Migrate Java to Azure      | `vscjava.migrate-java-to-azure`                 | Assists Java migration planning for Azure.   |
+| Gradle for Java            | `vscjava.vscode-gradle`                         | Integrates Gradle projects and tasks.        |
+| Debugger for Java          | `vscjava.vscode-java-debug`                     | Adds Java debugging support.                 |
+| Project Manager for Java   | `vscjava.vscode-java-dependency`                | Manages Java projects and dependencies.      |
+| Extension Pack for Java    | `vscjava.vscode-java-pack`                      | Bundles the core Java extension set.         |
+| Test Runner for Java       | `vscjava.vscode-java-test`                      | Discovers and runs Java tests.               |
+| Java Upgrade               | `vscjava.vscode-java-upgrade`                   | Helps upgrade Java language versions.        |
+| Maven for Java             | `vscjava.vscode-maven`                          | Integrates Maven projects and goals.         |
+| PostCSS Language Support   | `vunguyentuan.vscode-postcss`                   | Adds extra PostCSS language features.        |
+| JavaScript Snippets        | `xabikos.javascriptsnippets`                    | Adds common JavaScript snippet shortcuts.    |
+| Pretty TypeScript Errors   | `yoavbls.pretty-ts-errors`                      | Makes TypeScript errors easier to read.      |
+| Markdown All in One        | `yzhang.markdown-all-in-one`                    | Adds Markdown shortcuts, TOC, and helpers.   |
 
 ![Neon divider][divider]
 

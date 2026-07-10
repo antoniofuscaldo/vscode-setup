@@ -185,12 +185,12 @@ Copy-Item src\.vscode\custom.code-snippets "$userDir\snippets\custom.code-snippe
 
 ### 🌳 Git Flow
 
-This setup keeps Git intentionally fast:
+This setup keeps Git intentionally explicit:
 
-- smart commit enabled;
+- smart commit disabled;
 - autofetch enabled;
-- sync confirmation disabled;
-- post-commit sync enabled;
+- sync confirmation enabled;
+- post-commit sync disabled;
 - `main` and `master` marked as protected branches.
 
 ### 🤖 AI Assistants
@@ -308,7 +308,6 @@ Run these from **Terminal > Run Task...** in VS Code.
 | 🚀 Start Local Server     | Starts a simple Python HTTP server on port `8000`.                     |
 | 🔍 Find TODOs             | Searches the project for `TODO` and `FIXME` comments.                  |
 | 💀 Kill Process on Port   | Kills a process using a provided port number.                          |
-| 🔄 Git Sync               | Runs `git pull --rebase` followed by `git push`.                       |
 
 ---
 

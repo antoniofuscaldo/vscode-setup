@@ -63,13 +63,6 @@
       "presentation": {
         "reveal": "silent"
       }
-    },
-    {
-      "label": "🔄 Git Sync (Pull & Push)",
-      "type": "shell",
-      "command": "git pull --rebase && git push",
-      "problemMatcher": [],
-      "detail": "Pulls remote changes (rebase) and pushes your current branch."
     }
   ],
   "inputs": [

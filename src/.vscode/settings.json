@@ -65,11 +65,11 @@
   ],
   "terminal.integrated.scrollback": 10000,
 
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
+  "git.enableSmartCommit": false,
+  "git.confirmSync": true,
   "git.autofetch": true,
   "git.ignoreRebaseWarning": true,
-  "git.postCommitCommand": "sync",
+  "git.postCommitCommand": "none",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 

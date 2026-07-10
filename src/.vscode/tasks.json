@@ -26,9 +26,19 @@
     {
       "label": "🚀 Start Local Server",
       "type": "shell",
-      "command": "python3 -m http.server 8000",
+      "command": "command -v python3 >/dev/null 2>&1 && python3 -m http.server 8000 || python -m http.server 8000",
+      "windows": {
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-Command",
+          "if (Get-Command py -ErrorAction SilentlyContinue) { py -m http.server 8000 } else { python -m http.server 8000 }"
+        ]
+      },
       "problemMatcher": [],
-      "detail": "Serves the current directory on http://localhost:8000 using Python.",
+      "detail": "Serves the current directory on http://localhost:8000 using the available Python launcher.",
       "presentation": {
         "panel": "dedicated"
       }
@@ -36,7 +46,17 @@
     {
       "label": "🔍 Find TODOs",
       "type": "shell",
-      "command": "grep -rnE \"TODO|FIXME\" . --exclude-dir={node_modules,.git,dist,build,coverage}",
+      "command": "find . \\( -name node_modules -o -name .git -o -name dist -o -name build -o -name coverage \\) -prune -o -type f -exec grep -nIE \"TODO|FIXME\" {} + || test $? -eq 1",
+      "windows": {
+        "command": "powershell",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-Command",
+          "Get-ChildItem -Path . -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.FullName -notmatch '[\\\\/](node_modules|\\.git|dist|build|coverage)[\\\\/]' } | Select-String -Pattern 'TODO|FIXME'"
+        ]
+      },
       "problemMatcher": [],
       "detail": "Scans the entire project for TODO and FIXME comments, ignoring common build folders.",
       "presentation": {

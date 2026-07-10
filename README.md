@@ -334,8 +334,8 @@ Run these from **Terminal > Run Task...** in VS Code.
 | :------------------------ | :-------------------------------------------------------------- |
 | ⚡ Update Extensions List | Refreshes the extension list from your current VS Code install. |
 | 🧪 Open Playground        | Opens `playground.js` to test fonts, ligatures, and colors.     |
-| 🚀 Start Local Server     | Starts a simple Python HTTP server on port `8000`.              |
-| 🔍 Find TODOs             | Searches the project for `TODO` and `FIXME` comments.           |
+| 🚀 Start Local Server     | Starts a Python HTTP server on port `8000` with OS fallbacks.   |
+| 🔍 Find TODOs             | Searches for `TODO` and `FIXME` with platform-native commands.  |
 
 ---
 

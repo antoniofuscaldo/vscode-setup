@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Ultimate VS Code Setup animated hero</title>
+  <desc id="desc">Animated Catppuccin-inspired hero banner for the VS Code setup README.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#11111b" />
+      <stop offset="42%" stop-color="#181825" />
+      <stop offset="100%" stop-color="#1e1e2e" />
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5c2e7">
+        <animate attributeName="stop-color" values="#f5c2e7;#cba6f7;#89dceb;#a6e3a1;#f5c2e7" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#cba6f7">
+        <animate attributeName="stop-color" values="#cba6f7;#89dceb;#a6e3a1;#f5c2e7;#cba6f7" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#89dceb">
+        <animate attributeName="stop-color" values="#89dceb;#a6e3a1;#f5c2e7;#cba6f7;#89dceb" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <radialGradient id="orbPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5c2e7" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#f5c2e7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#89dceb" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#89dceb" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#cdd6f4" stroke-opacity="0.055" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)" />
+  <rect width="1200" height="360" rx="28" fill="url(#grid)" />
+
+  <circle cx="145" cy="80" r="155" fill="url(#orbPink)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="145;220;145" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="80;122;80" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1030" cy="250" r="185" fill="url(#orbBlue)" filter="url(#softGlow)">
+    <animate attributeName="cx" values="1030;940;1030" dur="11s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="250;205;250" dur="8s" repeatCount="indefinite" />
+  </circle>
+
+  <path d="M0 290C165 244 280 337 440 292C611 244 692 222 842 265C999 311 1074 280 1200 226V360H0Z" fill="url(#rail)" opacity="0.2">
+    <animate attributeName="opacity" values="0.16;0.28;0.16" dur="5s" repeatCount="indefinite" />
+  </path>
+
+  <g transform="translate(72 70)">
+    <rect x="0" y="0" width="74" height="74" rx="18" fill="#89dceb" opacity="0.13" stroke="#89dceb" stroke-opacity="0.45" />
+    <path d="M24 19L55 35L24 55L16 49L42 36L16 25Z" fill="#89dceb" />
+    <text x="96" y="33" fill="#f5e0dc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">EDITOR PROFILE</text>
+    <text x="96" y="82" fill="#cdd6f4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Ultimate VS Code Setup</text>
+    <text x="100" y="126" fill="#bac2de" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23">Catppuccin polish, fast workflow, and production-minded defaults.</text>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">
+    <g transform="translate(76 242)">
+      <rect width="184" height="44" rx="8" fill="#f5c2e7" opacity="0.16" stroke="#f5c2e7" stroke-opacity="0.55" />
+      <text x="20" y="28" fill="#f5c2e7">Catppuccin Mocha</text>
+    </g>
+    <g transform="translate(280 242)">
+      <rect width="160" height="44" rx="8" fill="#cba6f7" opacity="0.16" stroke="#cba6f7" stroke-opacity="0.55" />
+      <text x="20" y="28" fill="#cba6f7">Monaspace</text>
+    </g>
+    <g transform="translate(460 242)">
+      <rect width="182" height="44" rx="8" fill="#89dceb" opacity="0.16" stroke="#89dceb" stroke-opacity="0.55" />
+      <text x="20" y="28" fill="#89dceb">Cross-platform</text>
+    </g>
+    <g transform="translate(662 242)">
+      <rect width="184" height="44" rx="8" fill="#a6e3a1" opacity="0.16" stroke="#a6e3a1" stroke-opacity="0.55" />
+      <text x="20" y="28" fill="#a6e3a1">Corporate-safe</text>
+    </g>
+  </g>
+
+  <rect x="72" y="318" width="1056" height="5" rx="2.5" fill="#313244" />
+  <rect x="72" y="318" width="280" height="5" rx="2.5" fill="url(#rail)">
+    <animate attributeName="x" values="72;848;72" dur="7s" repeatCount="indefinite" />
+  </rect>
+</svg>

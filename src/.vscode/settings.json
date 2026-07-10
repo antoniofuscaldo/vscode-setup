@@ -31,13 +31,13 @@
   "editor.unicodeHighlight.ambiguousCharacters": true,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": false,
+  "editor.formatOnPaste": true,
   "editor.formatOnType": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
     "source.sortImports": "never",
-    "source.fixAll.markdownlint":"always"
+    "source.fixAll.markdownlint": "always"
   },
 
   "diffEditor.codeLens": true,
@@ -65,13 +65,11 @@
   ],
   "terminal.integrated.scrollback": 10000,
 
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
+  "git.enableSmartCommit": false,
+  "git.confirmSync": true,
   "git.autofetch": true,
   "git.ignoreRebaseWarning": true,
-  "git.postCommitCommand": "sync",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "git.postCommitCommand": "none",
 
   "javascript.preferences.quoteStyle": "double",
 
@@ -160,16 +158,8 @@
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
 
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.enable": {
-    "markdown": true
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.editor.enableCodeActions": true,
-  "github.copilot.renameSuggestions.triggerAutomatically": true,
   "geminicodeassist.project": "",
   "geminicodeassist.inlineSuggestions.enableAuto": false,
-  "cody.suggestions.mode": "autocomplete",
   "chat.viewSessions.orientation": "stacked",
 
   "liveServer.settings.donotVerifyTags": true,
@@ -216,10 +206,7 @@
   "git.decorations.enabled": true,
   "scm.diffDecorations": "gutter",
 
-  "git.branchProtection": [
-    "main",
-    "master"
-  ],
+  "git.branchProtection": ["main", "master"],
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.closeOnFileDelete": true,

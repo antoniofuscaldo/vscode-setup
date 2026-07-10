@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 34" role="img" aria-labelledby="title desc">
+  <title id="title">Animated neon divider</title>
+  <desc id="desc">A subtle animated divider using the README color palette.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5c2e7" />
+      <stop offset="35%" stop-color="#cba6f7" />
+      <stop offset="70%" stop-color="#89dceb" />
+      <stop offset="100%" stop-color="#a6e3a1" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-250%" width="120%" height="600%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="60" y="15" width="1080" height="4" rx="2" fill="#313244" opacity="0.7" />
+  <rect x="60" y="15" width="1080" height="4" rx="2" fill="url(#line)" opacity="0.75" filter="url(#glow)" />
+  <circle cx="60" cy="17" r="8" fill="#f5c2e7" filter="url(#glow)">
+    <animate attributeName="cx" values="60;1140;60" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="#f5c2e7;#cba6f7;#89dceb;#a6e3a1;#f5c2e7" dur="9s" repeatCount="indefinite" />
+  </circle>
+</svg>

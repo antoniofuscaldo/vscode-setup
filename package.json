@@ -1,0 +1,25 @@
+{
+  "name": "vscode-setup",
+  "version": "1.0.0",
+  "description": "A highly opinionated, aesthetic, and productivity-focused configuration for Visual Studio Code.",
+  "private": true,
+  "packageManager": "pnpm@11.11.0+sha512.4463f65fd80ed80d69bc1d4bf163ee94f605c7380fc318bb5b2ebe15f8cd12d49c51a4d59e951b401e764d3b6ca751cbf51bc50ed7001a6bcb4935e684c34882",
+  "scripts": {
+    "clean:all": "pnpm run clean:dist && pnpm run clean:node_modules",
+    "clean:dist": "rimraf dist",
+    "clean:node_modules": "rimraf node_modules",
+    "format": "prettier --write 'src/.vscode/**/*.json' 'src/.vscode/*.code-snippets' 'package.json' '.lintstagedrc' '.markdownlint.json' '*.md' '*.mjs' '.prettierrc.mjs'",
+    "format:check": "prettier --check 'src/.vscode/**/*.json' 'src/.vscode/*.code-snippets' 'package.json' '.lintstagedrc' '.markdownlint.json' '*.md' '*.mjs' '.prettierrc.mjs'",
+    "lint:staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "markdownlint-cli2": "^0.23.0",
+    "prettier": "^3.9.4",
+    "rimraf": "^6.1.3"
+  }
+}

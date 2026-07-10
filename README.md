@@ -1,317 +1,448 @@
-<p align="center">
-  <img src="assets/vscode.png" alt="VS Code Setup" width="150" />
-</p>
+![Animated VS Code setup hero][hero]
 
-# 🎨 Ultimate VS Code Setup
+# <img alt="VS Code" src="assets/icons/vscode.svg" width="32"> Ultimate VS Code Setup
 
-> **A highly opinionated, aesthetic, and productivity-focused configuration for Visual Studio Code.**
+> **_A beautiful, opinionated, and productivity-focused Visual Studio Code template for macOS, Windows, and Linux._**
 
-This repository contains a complete configuration to replicate a modern, clean, and efficient development environment. It focuses on a pastel aesthetic (Catppuccin), modern typography (Monaspace), and a frictionless workflow.
+This repository is my polished VS Code setup: theme, icons, fonts, editor
+behavior, keybindings, snippets, tasks, recommended extensions, and a small
+maintenance toolchain. It is designed to feel fast, aesthetic, and ready for
+real work without hiding the details behind an installer.
 
----
+![Neon divider][divider]
 
-## ✨ Features at a Glance
+## ✨ The Vibe
 
-| Category     | Choice                                                                             | Description                                        |
-| :----------- | :--------------------------------------------------------------------------------- | :------------------------------------------------- |
-| **Theme**    | 🐱 [Catppuccin Mocha](https://github.com/catppuccin/vscode)                         | A soothing, high-contrast pastel theme.            |
-| **Icons**    | 📁 [Catppuccin Icons](https://github.com/catppuccin/vscode-icons)                   | Matching icons for a cohesive look.                |
-| **Font**     | 🔤 [Monaspace Neon](https://monaspace.githubnext.com/)                              | A texture-healing variable font from GitHub Next.  |
-| **Terminal** | 🖥️ [MesloLGS NF](https://github.com/romkatv/powerlevel10k#manual-font-installation) | Perfect for glyph-heavy shells like Powerlevel10k. |
+| 🎨 Visual Mood                                                   | ⚡ Daily Flow                                             | 🧩 Workflow Kit                                                        |
+| :--------------------------------------------------------------- | :-------------------------------------------------------- | :--------------------------------------------------------------------- |
+| Catppuccin Mocha, soft contrast, clean icons, modern typography. | Format on save, smart Git, useful tasks, fast navigation. | Frontend, Python, Java, Markdown, WordPress, AI, Docker, remote tools. |
 
----
+| Theme                                                                                | 🔤 Editor Font     | 🖥️ Terminal Font | 🧠 Style                              |
+| :----------------------------------------------------------------------------------- | :----------------- | :--------------- | :------------------------------------ |
+| <img alt="Catppuccin" src="assets/icons/catppuccin.png" width="20"> Catppuccin Mocha | Monaspace Neon Var | MesloLGS NF      | Elegant, productive, a little magical |
 
-## � Gallery
+| Preview                                                              | Color | Hex       |
+| :------------------------------------------------------------------- | :---- | :-------- |
+| <img alt="Mauve #cba6f7" src="assets/palette/mauve.svg" width="120"> | Mauve | `#cba6f7` |
+| <img alt="Sky #89dceb" src="assets/palette/sky.svg" width="120">     | Sky   | `#89dceb` |
+| <img alt="Pink #f5c2e7" src="assets/palette/pink.svg" width="120">   | Pink  | `#f5c2e7` |
+| <img alt="Green #a6e3a1" src="assets/palette/green.svg" width="120"> | Green | `#a6e3a1` |
 
-<p align="center">
-  <img src="assets/screenshot-1.png" alt="VS Code Screenshot 1" width="50%" />
-  <img src="assets/screenshot-2.png" alt="VS Code Screenshot 2" width="50%" />
-</p>
+![Neon divider][divider]
 
----
+## 🖼️ Gallery
 
-## 🚀 Quick Setup (3 Minutes)
+| Editor Glow                                      | Workflow Focus                                   |
+| :----------------------------------------------- | :----------------------------------------------- |
+| ![VS Code screenshot 1](assets/screenshot-1.png) | ![VS Code screenshot 2](assets/screenshot-2.png) |
 
-### 👤 Option A: Use a VS Code Profile (Recommended)
+![Neon divider][divider]
 
-VS Code Profiles allow you to have a dedicated environment for this setup without affecting your default configuration.
+## 🚀 Quick Start
 
-1. **Create a Profile**:
-    - Click the **Manage** gear icon ⚙️ (bottom left) > **Profiles** > **Create Profile...**
-    - Select **Create an Empty Profile**.
-    - Name it `Ultimate Setup` (or any name you prefer).
-    - Click **Create**.
-2. **Open Profile Settings**:
-    - Open the Command Palette (`Cmd+Shift+P`).
-    - Type **"Preferences: Open User Settings (JSON)"** and select it.
-3. **Apply Configuration**:
-    - Copy the content of [`src/.vscode/settings.json`](src/.vscode/settings.json) from this repo.
-    - Paste it into the `settings.json` file you just opened in VS Code.
+The safest way to try this setup is to create a dedicated VS Code Profile first.
+That keeps your current VS Code environment untouched while you test the full
+experience.
 
-- (Optional) Copy [`src/.vscode/keybindings.json`](src/.vscode/keybindings.json) content to your `keybindings.json` (Open Command Palette > "Preferences: Open Keyboard Shortcuts (JSON)").
-- (Optional) Copy [`src/.vscode/tasks.json`](src/.vscode/tasks.json) to your User `tasks.json` if you want to use the included automation tasks.
-- Save the files.
+1. Open VS Code.
+2. Go to **Manage** > **Profiles** > **Create Profile...**.
+3. Choose **Create an Empty Profile**.
+4. Name it `Ultimate Setup`.
+5. Open the command palette and run **Preferences: Open User Settings (JSON)**.
+6. Copy the contents of `src/.vscode/settings.json` into that file.
+7. Optionally copy `keybindings.json`, `tasks.json`, and
+   `custom.code-snippets`.
+8. Install the recommended extensions from `src/.vscode/extensions.txt`.
 
-1. **Install Extensions**:
-    - VS Code will recommend extensions when you open this folder. Accept the recommendations to install them into this profile.
+> 🧠 This setup intentionally uses manual copy steps. You stay in control and
+> can review every file before replacing an existing VS Code configuration.
 
----
+![Neon divider][divider]
 
-### 🛠️ Option B: Global Setup (Manual)
+## 🗂️ Source Of Truth
 
-If you prefer to apply this configuration globally to your default profile, follow these steps.
+All reusable VS Code files live in `src/.vscode`.
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/antoniofuscaldo/vscode-setup.git
-cd vscode-setup
+```text
+src/.vscode/
+├── settings.json              # Main VS Code user settings
+├── keybindings.json           # Optional keyboard shortcuts
+├── tasks.json                 # Reusable VS Code tasks
+├── custom.code-snippets       # Personal snippets for daily workflow
+├── extensions.json            # Workspace recommendations
+└── extensions.txt             # Installable extension list for the CLI
 ```
 
-### 2. Install Prerequisites
+Root-level files keep the repository polished: formatting, commit hooks,
+markdown linting, commit message rules, and project metadata.
 
-- **Fonts**: Download and install the **[Monaspace](https://monaspace.githubnext.com/)** font family.
-- **VS Code CLI**: Ensure the `code` command is installed (`Cmd+Shift+P` > `Shell Command: Install 'code' command in PATH`).
+![Neon divider][divider]
 
-### 3. Install Extensions
+## 📦 Install Extensions
 
-VS Code will automatically recommend extensions when you open this folder, thanks to `.vscode/extensions.json`.
-
-Alternatively, if you want to install them via command line using the legacy list (platform-specific):
+First, make sure the `code` command is available:
 
 ```bash
-xargs -L 1 code --install-extension < src/extensions.txt
+code --version
 ```
+
+If it is missing, open VS Code and run
+**Shell Command: Install 'code' command in PATH** from the command palette.
+
+### macOS And Linux
+
+<img alt="macOS" src="assets/icons/Apple_dark.svg" width="24">
+<img alt="Linux" src="assets/icons/linux.svg" width="24">
+
+```bash
+while IFS= read -r extension; do
+  code --install-extension "$extension"
+done < src/.vscode/extensions.txt
+```
+
+### Windows Extension Install
+
+<img alt="Windows" src="assets/icons/windows.svg" width="24">
 
 ```powershell
-Get-Content src/extensions.txt | ForEach-Object { code --install-extension $_ }
+Get-Content src\.vscode\extensions.txt | ForEach-Object {
+  code --install-extension $_
+}
 ```
 
-### 4. Apply Settings
+![Neon divider][divider]
 
-Copy the configuration files to your VS Code User directory.
+## 🧰 Copy Configuration
 
-**MacOS:**
+Back up your current VS Code user files before copying this setup.
+
+### macOS
+
+<img alt="macOS" src="assets/icons/Apple_dark.svg" width="24">
 
 ```bash
-# Create the directory if it doesn't exist
-mkdir -p "$HOME/Library/Application Support/Code/User"
+USER_DIR="$HOME/Library/Application Support/Code/User"
+mkdir -p "$USER_DIR/snippets"
 
-# Copy settings and snippets
-cp src/.vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
-cp src/.vscode/custom.code-snippets "$HOME/Library/Application Support/Code/User/snippets/custom.code-snippets"
+cp src/.vscode/settings.json "$USER_DIR/settings.json"
+cp src/.vscode/keybindings.json "$USER_DIR/keybindings.json"
+cp src/.vscode/tasks.json "$USER_DIR/tasks.json"
+cp src/.vscode/custom.code-snippets "$USER_DIR/snippets/custom.code-snippets"
 ```
 
-> **Note:** This will overwrite your existing `settings.json`. Make a backup if necessary!
+### Linux
 
----
+<img alt="Linux" src="assets/icons/linux.svg" width="24">
 
-## 🛠️ Configuration Deep Dive
+```bash
+USER_DIR="$HOME/.config/Code/User"
+mkdir -p "$USER_DIR/snippets"
 
-Below is a detailed explanation of the important, non-default choices present in `src/.vscode/settings.json` and why I set them.
+cp src/.vscode/settings.json "$USER_DIR/settings.json"
+cp src/.vscode/keybindings.json "$USER_DIR/keybindings.json"
+cp src/.vscode/tasks.json "$USER_DIR/tasks.json"
+cp src/.vscode/custom.code-snippets "$USER_DIR/snippets/custom.code-snippets"
+```
 
-### 🖥️ UI & Appearance
+### Windows Configuration Copy
 
-- **Startup**: `workbench.startupEditor: none` — Skips the welcome page for a faster launch.
-- **Theme**: `workbench.iconTheme: catppuccin-mocha` & `workbench.colorTheme: Catppuccin Mocha` — The core of the pastel aesthetic.
-- **Layout**: `workbench.activityBar.location: top` — Moves the activity bar to the top for a compact, vertical-space-saving layout.
-- **Terminal**: `workbench.colorCustomizations.terminalCursor.foreground` — Custom cursor color to match the theme perfectly.
-- **Explorer**:
-  - `breadcrumbs.enabled: false` — Hides breadcrumbs to reduce header clutter.
-  - `explorer.confirmDelete: true` — Safety first: confirm before deleting files.
-  - `explorer.confirmDragAndDrop: false` — Prevents accidental drag-and-drop file moves.
+<img alt="Windows" src="assets/icons/windows.svg" width="24">
 
-### ✍️ Editor Typography & Behavior
+```powershell
+$userDir = "$env:APPDATA\Code\User"
+New-Item -ItemType Directory -Force -Path "$userDir\snippets" | Out-Null
 
-- **Font**: `Monaspace Neon Var` (Size 14, Weight 400, Line Height 1.6) — Tuned for maximum readability.
-- **Ligatures**: `editor.fontLigatures` & `editor.fontVariations` — Enables advanced variable font features and ligatures.
-- **Animations**: `editor.cursorBlinking: expand` & `editor.cursorSmoothCaretAnimation: on` — A smooth, modern typing experience.
-- **Navigation**: `editor.smoothScrolling` & `editor.mouseWheelZoom` — Fluid scrolling and pinch-to-zoom support.
-- **Editing**:
-  - `editor.linkedEditing: true` — Edit paired HTML tags simultaneously.
-  - `editor.wordWrap: on` — No horizontal scrolling.
-  - `editor.tabSize: 2` — Standard 2-space indentation.
+Copy-Item src\.vscode\settings.json "$userDir\settings.json"
+Copy-Item src\.vscode\keybindings.json "$userDir\keybindings.json"
+Copy-Item src\.vscode\tasks.json "$userDir\tasks.json"
+Copy-Item src\.vscode\custom.code-snippets "$userDir\snippets\custom.code-snippets"
+```
+
+![Neon divider][divider]
+
+## 🎛️ Configuration Highlights
+
+### 🎨 UI & Appearance
+
+- `workbench.colorTheme`: Catppuccin Mocha.
+- `workbench.iconTheme`: Catppuccin Mocha icons.
+- `workbench.activityBar.location`: top, for a compact workbench.
+- `breadcrumbs.enabled`: disabled, to reduce visual noise.
+- custom terminal cursor color to match the theme.
+
+### ✍️ Editor Feel
+
+- `editor.fontFamily`: Monaspace Neon Var.
+- variable fonts and ligatures enabled.
+- smooth caret animation and smooth scrolling.
+- word wrap enabled for a softer reading flow.
+- sticky scroll enabled for better code context.
 
 ### 🧹 Formatting & Linting
 
-- **Default Formatter**: `esbenp.prettier-vscode` — Prettier handles all formatting.
-- **Automation**: `editor.formatOnPaste`, `formatOnType`, `formatOnSave: true` — Keeps code consistent automatically.
-- **Auto-Fix**: `editor.codeActionsOnSave` — Runs `source.fixAll.eslint` and `source.sortImports` on every save.
+- Prettier is the default formatter.
+- Format on save and format on paste are enabled.
+- ESLint and markdownlint fix actions run on save where available.
+- Java, Astro, and Markdown use dedicated formatter overrides.
 
-### 💾 Files & Terminal
+### 🌳 Git Flow
 
-- **Auto-Save**: `files.autoSave: onFocusChange` — Saves changes whenever you switch windows or tabs.
-- **Terminal Font**: `terminal.integrated.fontFamily: MesloLGS NF` — Ensures powerline glyphs render correctly.
-- **Links**: `terminal.integrated.allowedLinkSchemes` — Allows clicking `file`, `http`, `https` links directly in the terminal.
+This setup keeps Git intentionally explicit:
 
-### 🌳 Git & Version Control
+- smart commit disabled;
+- autofetch enabled;
+- sync confirmation enabled;
+- post-commit sync disabled;
+- `main` and `master` marked as protected branches.
 
-- **Workflow**: `git.enableSmartCommit`, `git.autofetch`, `git.confirmSync: false` — A faster, less intrusive Git experience.
-- **GitLens**: Pre-configured AI model settings for users of GitLens features.
+### 🤖 AI Assistants
 
-### 🤖 AI & Copilot
+AI extensions are account-dependent, so this setup keeps them explicit. The
+current synced install includes Gemini Code Assist and Mintlify. Settings for
+other assistants are intentionally omitted unless their extensions are installed
+and reviewed.
 
-- **Copilot**: `github.copilot.enable: false` — Disabled by default (enable if you use it).
-- **Other Assistants**: Configurations for `geminicodeassist` and `cody` are included for those who use them.
+![Neon divider][divider]
 
-### ⚡ Performance & Extras
+## 🛡️ Corporate & Security Notes
 
-- **Diff Editor**: `diffEditor.codeLens: true` — Enhanced diff viewing.
-- **Code Runner**: `code-runner.executorMap` — Custom commands to run code snippets quickly for various languages.
-- **Python**: `python.defaultInterpreterPath` — Set to `/usr/local/bin/python3` (adjust path as needed).
+This setup is designed to stay safe by default for professional work, but it
+should still be reviewed against your organization's policies before adoption.
 
----
+- **Workspace Trust**: keep VS Code Workspace Trust enabled and open unfamiliar
+  repositories in Restricted Mode until the source is reviewed. See
+  [Workspace Trust][workspace-trust].
+- **Extensions**: treat `src/.vscode/extensions.txt` as an allow-list candidate.
+  Review publishers, licenses, telemetry, update cadence, and Marketplace trust
+  signals before rollout. See
+  [Extension runtime security][extension-security].
+- **Tasks**: shared tasks are intentionally limited to explicit, low-risk
+  helpers. Avoid adding install, kill, sync, deploy, or destructive commands
+  unless they are clearly documented and approved.
+- **Git**: sync and push stay manual. Smart commit and post-commit sync are
+  disabled so review, CI, and branch protection workflows remain in control.
+- **AI**: assistant extensions are opt-in and account-dependent. Add
+  assistant-specific settings only after the extension, data handling, and
+  organization policy have been reviewed.
+- **Telemetry**: VS Code telemetry is disabled with
+  `telemetry.telemetryLevel: off`, but extension telemetry and online services
+  may require separate review. See [Telemetry][telemetry].
+- **Secrets**: do not store tokens, API keys, passwords, certificates, or
+  internal URLs in settings, snippets, tasks, or README examples. Use
+  organization-approved secret managers.
 
-## 📦 Extensions
+![Neon divider][divider]
 
-This setup comes with a curated list of extensions to supercharge your development workflow.
+## 🧩 Extension Galaxy
 
-### 🎨 Theming & UI
+All extensions are installed from `src/.vscode/extensions.txt` and recommended
+through `src/.vscode/extensions.json`.
 
-- **[Catppuccin Theme](https://marketplace.visualstudio.com/items?itemName=catppuccin.catppuccin-vsc)** (`catppuccin.catppuccin-vsc`): Soothing pastel theme for VS Code.
-- **[Catppuccin Icons](https://marketplace.visualstudio.com/items?itemName=catppuccin.catppuccin-vsc-icons)** (`catppuccin.catppuccin-vsc-icons`): Matching icons for a cohesive look.
-- **[Dracula Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)** (`dracula-theme.theme-dracula`): A dark theme for many editors, shells, and more.
-- **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=pkief.material-icon-theme)** (`pkief.material-icon-theme`): Material Design Icons.
+| Orbit           | Extensions                                                                   |
+| :-------------- | :--------------------------------------------------------------------------- |
+| 🎨 Theme & UI   | Catppuccin, Catppuccin Icons, Dracula, Material Icons, Dash                  |
+| 🌐 Frontend     | Tailwind, Astro, MDX, PostCSS, ESLint, Prettier, Stylelint, Bootstrap        |
+| ⚛️ JavaScript   | TypeScript Nightly, JavaScript snippets, Pretty TypeScript Errors            |
+| 🐍 Python       | Python, Pylance, debugpy, Python Environment Manager                         |
+| ☕ Java         | Red Hat Java, Java Pack, Maven, Gradle, Debugger, Test Runner                |
+| 🤖 AI & Docs    | Gemini Code Assist, Mintlify, Document This                                  |
+| 🌳 Git & DevOps | GitHub Actions, Pull Requests, Docker, Containers, Dev Containers, SSH       |
+| 📝 Writing      | Markdown All in One, Markdown Preview Enhanced, Spell Checker, EditorConfig  |
+| 🛠️ Utilities    | Code Runner, Live Server, Error Lens, Better Comments, Rainbow CSV, CodeTime |
 
-### 🌐 Web Development
+### Full Extension List
 
-- **[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)** (`bradlc.vscode-tailwindcss`): Intelligent Tailwind CSS tooling.
-- **[PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)** (`csstools.postcss`): Syntax highlighting for PostCSS.
-- **[Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** (`esbenp.prettier-vscode`): Code formatter using Prettier.
-- **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)** (`dbaeumer.vscode-eslint`): Integrates ESLint into VS Code.
-- **[Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)** (`formulahendry.auto-rename-tag`): Auto rename paired HTML/XML tag.
-- **[Bootstrap 4 & 5 IntelliSense](https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense)** (`hossaini.bootstrap-intellisense`): Bootstrap 4 & 5 autocomplete.
-- **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.liveserver)** (`ritwickdey.liveserver`): Launch a local development server with live reload.
-- **[Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)** (`wix.vscode-import-cost`): Display import size of the package.
-- **[JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.javascriptsnippets)** (`xabikos.javascriptsnippets`): JavaScript snippets (ES6).
-- **[MDX](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx)** (`unifiedjs.vscode-mdx`): MDX language support.
-- **[Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)** (`astro-build.astro-vscode`): Language support for Astro.
-- **[TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)** (`ms-vscode.vscode-typescript-next`): TypeScript Nightly build.
+| Extension                  | ID                                              | Description                                  |
+| :------------------------- | :---------------------------------------------- | :------------------------------------------- |
+| Better Comments            | `aaron-bond.better-comments`                    | Highlights categorized comments in code.     |
+| Astro                      | `astro-build.astro-vscode`                      | Adds Astro language support and tooling.     |
+| Tailwind CSS IntelliSense  | `bradlc.vscode-tailwindcss`                     | Completes Tailwind classes and hints.        |
+| Catppuccin Theme           | `catppuccin.catppuccin-vsc`                     | Applies the Catppuccin editor theme.         |
+| Catppuccin Icons           | `catppuccin.catppuccin-vsc-icons`               | Adds matching Catppuccin file icons.         |
+| PostCSS Language Support   | `csstools.postcss`                              | Improves PostCSS syntax support.             |
+| ESLint                     | `dbaeumer.vscode-eslint`                        | Shows JavaScript and TypeScript lint issues. |
+| Dash                       | `deerawan.vscode-dash`                          | Opens API documentation in Dash.             |
+| Docker                     | `docker.docker`                                 | Adds Docker files and container tooling.     |
+| Dracula Theme              | `dracula-theme.theme-dracula`                   | Provides an alternate polished dark theme.   |
+| EditorConfig               | `editorconfig.editorconfig`                     | Applies shared `.editorconfig` rules.        |
+| Prettier                   | `esbenp.prettier-vscode`                        | Formats code with Prettier.                  |
+| Auto Rename Tag            | `formulahendry.auto-rename-tag`                 | Keeps paired HTML and XML tags synced.       |
+| Code Runner                | `formulahendry.code-runner`                     | Runs snippets and single files quickly.      |
+| GitHub Actions             | `github.vscode-github-actions`                  | Helps author and inspect workflow files.     |
+| GitHub Pull Requests       | `github.vscode-pull-request-github`             | Integrates GitHub PRs and issues in VS Code. |
+| Gemini Code Assist         | `google.geminicodeassist`                       | Adds opt-in Gemini AI assistance.            |
+| Bootstrap IntelliSense     | `hossaini.bootstrap-intellisense`               | Completes Bootstrap classes and utilities.   |
+| CodeTime                   | `jannchie.codetime`                             | Tracks coding activity and focus time.       |
+| Rainbow CSV                | `mechatroner.rainbow-csv`                       | Colors CSV columns and adds table tools.     |
+| Mintlify Doc Writer        | `mintlify.document`                             | Helps generate and maintain docs.            |
+| Containers                 | `ms-azuretools.vscode-containers`               | Adds container management features.          |
+| Docker for VS Code         | `ms-azuretools.vscode-docker`                   | Supports Dockerfiles, Compose, and images.   |
+| debugpy                    | `ms-python.debugpy`                             | Provides Python debugging support.           |
+| Python                     | `ms-python.python`                              | Adds core Python language tooling.           |
+| Pylance                    | `ms-python.vscode-pylance`                      | Adds fast Python analysis and IntelliSense.  |
+| Python Environment Manager | `ms-python.vscode-python-envs`                  | Manages Python environments from VS Code.    |
+| Dev Containers             | `ms-vscode-remote.remote-containers`            | Opens projects inside dev containers.        |
+| Remote SSH                 | `ms-vscode-remote.remote-ssh`                   | Connects VS Code to remote machines via SSH. |
+| Remote SSH Edit            | `ms-vscode-remote.remote-ssh-edit`              | Edits Remote SSH configuration files.        |
+| Remote Explorer            | `ms-vscode.remote-explorer`                     | Browses remote targets in one place.         |
+| TypeScript Nightly         | `ms-vscode.vscode-typescript-next`              | Uses the latest TypeScript language service. |
+| Document This              | `oouo-diogo-perdigao.docthis`                   | Generates JSDoc comments quickly.            |
+| Material Icon Theme        | `pkief.material-icon-theme`                     | Provides an alternate file icon set.         |
+| Java                       | `redhat.java`                                   | Adds Java language server support.           |
+| Live Server                | `ritwickdey.liveserver`                         | Serves static pages with live reload.        |
+| Markdown Preview Enhanced  | `shd101wyy.markdown-preview-enhanced`           | Adds richer Markdown previews.               |
+| Code Spell Checker         | `streetsidesoftware.code-spell-checker`         | Checks English spelling in text and code.    |
+| Italian Spell Checker      | `streetsidesoftware.code-spell-checker-italian` | Adds Italian spelling support.               |
+| Stylelint                  | `stylelint.vscode-stylelint`                    | Shows CSS and stylesheet lint issues.        |
+| MDX                        | `unifiedjs.vscode-mdx`                          | Adds MDX syntax and language support.        |
+| Error Lens                 | `usernamehw.errorlens`                          | Shows diagnostics directly inline.           |
+| Migrate Java to Azure      | `vscjava.migrate-java-to-azure`                 | Assists Java migration planning for Azure.   |
+| Gradle for Java            | `vscjava.vscode-gradle`                         | Integrates Gradle projects and tasks.        |
+| Debugger for Java          | `vscjava.vscode-java-debug`                     | Adds Java debugging support.                 |
+| Project Manager for Java   | `vscjava.vscode-java-dependency`                | Manages Java projects and dependencies.      |
+| Extension Pack for Java    | `vscjava.vscode-java-pack`                      | Bundles the core Java extension set.         |
+| Test Runner for Java       | `vscjava.vscode-java-test`                      | Discovers and runs Java tests.               |
+| Java Upgrade               | `vscjava.vscode-java-upgrade`                   | Helps upgrade Java language versions.        |
+| Maven for Java             | `vscjava.vscode-maven`                          | Integrates Maven projects and goals.         |
+| PostCSS Language Support   | `vunguyentuan.vscode-postcss`                   | Adds extra PostCSS language features.        |
+| JavaScript Snippets        | `xabikos.javascriptsnippets`                    | Adds common JavaScript snippet shortcuts.    |
+| Pretty TypeScript Errors   | `yoavbls.pretty-ts-errors`                      | Makes TypeScript errors easier to read.      |
+| Markdown All in One        | `yzhang.markdown-all-in-one`                    | Adds Markdown shortcuts, TOC, and helpers.   |
 
-### 🐍 Python
+![Neon divider][divider]
 
-- **[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)** (`ms-python.python`): Python language support.
-- **[Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)** (`ms-python.vscode-pylance`): Performant Python language server.
-- **[debugpy](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)** (`ms-python.debugpy`): Python debugger.
-- **[Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-python-envs)** (`ms-python.vscode-python-envs`): Python environment manager.
+## ✂️ Snippet Studio
 
-### ☕ Java
+`src/.vscode/custom.code-snippets` is intentionally broad because it mirrors the
+real daily workflow.
 
-- **[Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)** (`redhat.java`): Java language support.
-- **[Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)** (`vscjava.vscode-java-pack`): Java Extension Pack.
-- **[Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)** (`vscjava.vscode-maven`): Maven support.
-- **[Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle)** (`vscjava.vscode-gradle`): Gradle extension.
-- **[Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)** (`vscjava.vscode-java-debug`): Java debugger.
-- **[Test Runner for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-test)** (`vscjava.vscode-java-test`): Java Test Runner.
-- **[Project Manager for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency)** (`vscjava.vscode-java-dependency`): Java dependency viewer.
-- **[Migrate to Azure](https://marketplace.visualstudio.com/items?itemName=vscjava.migrate-java-to-azure)** (`vscjava.migrate-java-to-azure`): Migration tools for Java to Azure.
+| Prefix Family | What It Gives You                                                        |
+| :------------ | :----------------------------------------------------------------------- |
+| `h-*`         | HTML layouts, headers, covers, cards, buttons, grids, and templates.     |
+| `c-*`         | CSS reset, helpers, grid system, buttons, animations, and utilities.     |
+| `j-*`         | Vanilla JS selectors, events, scrolling, observers, and UI interactions. |
+| `gs-*`        | GSAP and ScrollTrigger animation starters.                               |
+| `jq-*`        | jQuery helpers for legacy and client-maintained projects.                |
+| `p-*`         | PHP helpers.                                                             |
+| `wp-*`        | WordPress theme snippets, loops, menus, sidebars, and template helpers.  |
 
-### 🤖 AI & Productivity
+![Neon divider][divider]
 
-- **[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=github.copilot)** (`github.copilot`): AI pair programmer.
-- **[GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=github.copilot-chat)** (`github.copilot-chat`): AI chat interface for GitHub Copilot.
-- **[Gemini Code Assist](https://marketplace.visualstudio.com/items?itemName=google.geminicodeassist)** (`google.geminicodeassist`): AI code assistance from Google.
-- **[Mintlify Doc Writer](https://marketplace.visualstudio.com/items?itemName=mintlify.document)** (`mintlify.document`): AI documentation generator.
-- **[Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)** (`aaron-bond.better-comments`): Improve your code commenting.
-- **[ErrorLens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)** (`usernamehw.errorlens`): Improve highlighting of errors and warnings.
-- **[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)** (`eamodio.gitlens`): Supercharge Git within VS Code.
-- **[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)** (`formulahendry.code-runner`): Run code snippet or code file.
-- **[Document This](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis)** (`oouo-diogo-perdigao.docthis`): Generate JSDoc comments for JS/TS.
-- **[CodeTime](https://marketplace.visualstudio.com/items?itemName=jannchie.codetime)** (`jannchie.codetime`): Time tracking and metrics.
-- **[Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)** (`deerawan.vscode-dash`): Dash, Zeal, and Velocity documentation integration.
+## 🏗️ Built-In Tasks
 
-### 📝 Markdown & Docs
+Run these from **Terminal > Run Task...** in VS Code.
 
-- **[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)** (`yzhang.markdown-all-in-one`): All you need for Markdown.
-- **[Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)** (`shd101wyy.markdown-preview-enhanced`): Markdown preview with math, diagrams, etc.
+| Task                      | Why You Want It                                                 |
+| :------------------------ | :-------------------------------------------------------------- |
+| ⚡ Update Extensions List | Refreshes the extension list from your current VS Code install. |
+| 🧪 Open Playground        | Opens `playground.js` to test fonts, ligatures, and colors.     |
+| 🚀 Start Local Server     | Starts a Python HTTP server on port `8000` with OS fallbacks.   |
+| 🔍 Find TODOs             | Searches for `TODO` and `FIXME` with platform-native commands.  |
 
-### ☁️ Remote & DevOps
-
-- **[Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)** (`ms-vscode-remote.remote-ssh`): Open any folder on a remote machine using SSH.
-- **[Remote Explorer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer)** (`ms-vscode.remote-explorer`): View remote machines.
-- **[GitHub Actions](https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions)** (`github.vscode-github-actions`): GitHub Actions workflows management.
-- **[GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=github.vscode-pull-request-github)** (`github.vscode-pull-request-github`): Pull Request and Issue provider for GitHub.
-
-### 🔧 Utilities
-
-- **[Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)** (`mechatroner.rainbow-csv`): Highlight CSV and TSV files.
-
----
-
-## 🏗️ Included Tasks
-
-This setup includes a `tasks.json` file with helper commands to manage your configuration. You can run them via `Terminal > Run Task...`:
-
-### 🛠️ Maintenance
-
-- **⚡ Update Extensions List**: Updates `src/extensions.txt` with your currently installed extensions.
-- **🧪 Open Playground**: Quickly opens the `playground.js` file to test your theme and font settings.
-
-### 🚀 Productivity
-
-- **📦 Smart Install Deps**: Detects your project type (`package.json`, `requirements.txt`, `pom.xml`, etc.) and runs the correct install command.
-- **🔍 Find TODOs**: Scans the entire project for `TODO` and `FIXME` comments.
-- **🚀 Start Local Server**: Launches a simple Python HTTP server on port 8000.
-- **💀 Kill Process on Port...**: Force kills a process on a specific port (lifesaver when a server gets stuck).
-- **🔄 Git Sync**: Performs a `git pull --rebase` followed by a `git push`.
-
----
-
-## 🧩 Included Snippets
-
-This setup includes a `custom.code-snippets` file packed with productivity boosters, especially for HTML/Frontend work:
-
-- `h-menu-header`: Generates a fully responsive header with a hamburger menu.
-- `h-cover`: Creates a hero section with a background image gradient.
-- `h-card`: Inserts a styled card component with image and text.
-- `h-box`: A simple content box container.
-
----
+![Neon divider][divider]
 
 ## 🧪 Playground
 
-A `playground.js` file is included in the root of this repository. Open it to instantly test:
+Open `playground.js` after applying the setup to check:
 
-- **Font Ligatures**: Check symbols like `!=`, `=>`, `===`.
-- **Texture Healing**: See how Monaspace handles letter spacing (e.g., `mmmm` vs `iiii`).
-- **Theme Colors**: Verify that syntax highlighting (Catppuccin Mocha) is working correctly.
+- ligatures like `!=`, `=>`, `===`, `<=`, and `>=`;
+- Monaspace texture healing with repeated characters;
+- Catppuccin syntax highlighting;
+- comments, classes, functions, async code, strings, and errors.
 
----
+![Neon divider][divider]
 
-## 📂 Repository Structure
+## 🛠️ Repository Tooling
+
+This repository uses a lightweight Node toolchain to keep the setup tidy.
+
+```bash
+pnpm install
+pnpm run format:check
+```
+
+| Script                        | Purpose                                                |
+| :---------------------------- | :----------------------------------------------------- |
+| `pnpm run format`             | Formats Markdown, configs, VS Code JSON, and snippets. |
+| `pnpm run format:check`       | Checks formatting without writing changes.             |
+| `pnpm run lint:staged`        | Runs the staged-file pre-commit checks.                |
+| `pnpm run clean:dist`         | Removes `dist`.                                        |
+| `pnpm run clean:node_modules` | Removes `node_modules`.                                |
+| `pnpm run clean:all`          | Removes generated output and dependencies.             |
+
+Commits are guarded by Husky:
+
+- `pre-commit` runs lint-staged using `.lintstagedrc`.
+- `commit-msg` validates Conventional Commits with `commitlint.config.mjs`.
+
+```bash
+git commit -m "feat: add prisma extension to recommendations"
+git commit -m "fix: update extensions list path"
+git commit -m "docs: polish readme visuals"
+```
+
+![Neon divider][divider]
+
+## 🗺️ Project Map
 
 ```text
 .
-├── .editorconfig              # Coding style configuration
-├── playground.js              # Theme & Font testing playground
-├── README.md                  # Documentation
-├── assets/                    # Project images
+├── .editorconfig
+├── .gitattributes
+├── .husky/
+├── .lintstagedrc
+├── .markdownlint.json
+├── .prettierignore
+├── .prettierrc.mjs
+├── .vscode/
+│   └── settings.json
+├── assets/
+│   ├── screenshot-1.png
+│   ├── screenshot-2.png
+│   └── vscode.png
+├── commitlint.config.mjs
+├── package.json
+├── playground.js
+├── pnpm-lock.yaml
 └── src/
-    ├── extensions.txt         # Legacy list of extensions
     └── .vscode/
-        ├── extensions.json    # Recommended extensions
-        ├── settings.json      # Main VS Code configuration
-        ├── tasks.json         # Automation tasks
-        ├── keybindings.json   # Optional keybindings
-        └── custom.code-snippets
+        ├── custom.code-snippets
+        ├── extensions.json
+        ├── extensions.txt
+        ├── keybindings.json
+        ├── settings.json
+        └── tasks.json
 ```
 
----
+![Neon divider][divider]
 
-## 🔗 Credits & Resources
+## 🌟 Credits
 
-- [Catppuccin Theme](https://github.com/catppuccin/vscode)
-- [Monaspace Font](https://monaspace.githubnext.com/)
-- [VS Code Documentation](https://code.visualstudio.com/docs)
+- [Catppuccin for VS Code][catppuccin]
+- [Catppuccin Icons][catppuccin-icons]
+- [Monaspace][monaspace]
+- [MesloLGS NF][meslo]
+- [Visual Studio Code documentation][vscode-docs]
 
----
+![Neon divider][divider]
 
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/antoniofuscaldo">Antonio Fuscaldo</a>
-</p>
+## <img alt="License" src="assets/icons/license.svg" width="22"> License
 
----
+Released under the [MIT License](LICENSE).
 
-<sub align="center" style="font-size: 10px; color: gray;">
-<em>Visual Studio Code, VS Code, and the Visual Studio Code icon are trademarks of Microsoft Corporation. All rights reserved.</em>
-</sub>
+Visual Studio Code and the VS Code icon are trademarks of Microsoft
+Corporation.
+
+![Footer wave][footer]
+
+[hero]: assets/readme/hero.svg
+[divider]: assets/readme/divider.svg
+[footer]: https://capsule-render.vercel.app/api?type=waving&color=0:f5c2e7,50:cba6f7,100:89dceb&height=120&section=footer
+[catppuccin]: https://github.com/catppuccin/vscode
+[catppuccin-icons]: https://github.com/catppuccin/vscode-icons
+[monaspace]: https://monaspace.githubnext.com/
+[meslo]: https://github.com/romkatv/powerlevel10k#manual-font-installation
+[vscode-docs]: https://code.visualstudio.com/docs
+[workspace-trust]: https://code.visualstudio.com/docs/editing/workspaces/workspace-trust
+[extension-security]: https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security
+[telemetry]: https://code.visualstudio.com/docs/configure/telemetry

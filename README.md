@@ -1,7 +1,6 @@
-# 🎨 Ultimate VS Code Setup
+# <img alt="VS Code" src="assets/icons/vscode.svg" width="32"> Ultimate VS Code Setup
 
-> A beautiful, opinionated, and productivity-focused Visual Studio Code
-> template for macOS, Windows, and Linux.
+> **_A beautiful, opinionated, and productivity-focused Visual Studio Code template for macOS, Windows, and Linux._**
 
 This repository is my polished VS Code setup: theme, icons, fonts, editor
 behavior, keybindings, snippets, tasks, recommended extensions, and a small

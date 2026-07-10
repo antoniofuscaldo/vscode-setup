@@ -2,8 +2,6 @@
 
 # <img alt="VS Code" src="assets/icons/vscode.svg" width="32"> Ultimate VS Code Setup
 
-![Animated setup rhythm][typing]
-
 > **_A beautiful, opinionated, and productivity-focused Visual Studio Code template for macOS, Windows, and Linux._**
 
 This repository is my polished VS Code setup: theme, icons, fonts, editor
@@ -438,7 +436,6 @@ Corporation.
 ![Footer wave][footer]
 
 [hero]: assets/readme/hero.svg
-[typing]: assets/readme/typing.svg
 [divider]: assets/readme/divider.svg
 [footer]: https://capsule-render.vercel.app/api?type=waving&color=0:f5c2e7,50:cba6f7,100:89dceb&height=120&section=footer
 [catppuccin]: https://github.com/catppuccin/vscode

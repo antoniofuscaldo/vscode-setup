@@ -1,4 +1,8 @@
+![Animated VS Code setup hero][hero]
+
 # <img alt="VS Code" src="assets/icons/vscode.svg" width="32"> Ultimate VS Code Setup
+
+![Animated setup rhythm][typing]
 
 > **_A beautiful, opinionated, and productivity-focused Visual Studio Code template for macOS, Windows, and Linux._**
 
@@ -7,7 +11,7 @@ behavior, keybindings, snippets, tasks, recommended extensions, and a small
 maintenance toolchain. It is designed to feel fast, aesthetic, and ready for
 real work without hiding the details behind an installer.
 
----
+![Neon divider][divider]
 
 ## ✨ The Vibe
 
@@ -26,7 +30,7 @@ real work without hiding the details behind an installer.
 | <img alt="Pink #f5c2e7" src="assets/palette/pink.svg" width="120">   | Pink  | `#f5c2e7` |
 | <img alt="Green #a6e3a1" src="assets/palette/green.svg" width="120"> | Green | `#a6e3a1` |
 
----
+![Neon divider][divider]
 
 ## 🖼️ Gallery
 
@@ -34,7 +38,7 @@ real work without hiding the details behind an installer.
 | :----------------------------------------------- | :----------------------------------------------- |
 | ![VS Code screenshot 1](assets/screenshot-1.png) | ![VS Code screenshot 2](assets/screenshot-2.png) |
 
----
+![Neon divider][divider]
 
 ## 🚀 Quick Start
 
@@ -55,7 +59,7 @@ experience.
 > 🧠 This setup intentionally uses manual copy steps. You stay in control and
 > can review every file before replacing an existing VS Code configuration.
 
----
+![Neon divider][divider]
 
 ## 🗂️ Source Of Truth
 
@@ -74,7 +78,7 @@ src/.vscode/
 Root-level files keep the repository polished: formatting, commit hooks,
 markdown linting, commit message rules, and project metadata.
 
----
+![Neon divider][divider]
 
 ## 📦 Install Extensions
 
@@ -108,7 +112,7 @@ Get-Content src\.vscode\extensions.txt | ForEach-Object {
 }
 ```
 
----
+![Neon divider][divider]
 
 ## 🧰 Copy Configuration
 
@@ -156,7 +160,7 @@ Copy-Item src\.vscode\tasks.json "$userDir\tasks.json"
 Copy-Item src\.vscode\custom.code-snippets "$userDir\snippets\custom.code-snippets"
 ```
 
----
+![Neon divider][divider]
 
 ## 🎛️ Configuration Highlights
 
@@ -200,7 +204,7 @@ current synced install includes Gemini Code Assist and Mintlify. Settings for
 other assistants are intentionally omitted unless their extensions are installed
 and reviewed.
 
----
+![Neon divider][divider]
 
 ## 🛡️ Corporate & Security Notes
 
@@ -229,7 +233,7 @@ should still be reviewed against your organization's policies before adoption.
   internal URLs in settings, snippets, tasks, or README examples. Use
   organization-approved secret managers.
 
----
+![Neon divider][divider]
 
 ## 🧩 Extension Galaxy
 
@@ -307,7 +311,7 @@ through `src/.vscode/extensions.json`.
 | Pretty TypeScript Errors   | `yoavbls.pretty-ts-errors`                      |
 | Markdown All in One        | `yzhang.markdown-all-in-one`                    |
 
----
+![Neon divider][divider]
 
 ## ✂️ Snippet Studio
 
@@ -324,7 +328,7 @@ real daily workflow.
 | `p-*`         | PHP helpers.                                                             |
 | `wp-*`        | WordPress theme snippets, loops, menus, sidebars, and template helpers.  |
 
----
+![Neon divider][divider]
 
 ## 🏗️ Built-In Tasks
 
@@ -337,7 +341,7 @@ Run these from **Terminal > Run Task...** in VS Code.
 | 🚀 Start Local Server     | Starts a Python HTTP server on port `8000` with OS fallbacks.   |
 | 🔍 Find TODOs             | Searches for `TODO` and `FIXME` with platform-native commands.  |
 
----
+![Neon divider][divider]
 
 ## 🧪 Playground
 
@@ -348,7 +352,7 @@ Open `playground.js` after applying the setup to check:
 - Catppuccin syntax highlighting;
 - comments, classes, functions, async code, strings, and errors.
 
----
+![Neon divider][divider]
 
 ## 🛠️ Repository Tooling
 
@@ -379,7 +383,7 @@ git commit -m "fix: update extensions list path"
 git commit -m "docs: polish readme visuals"
 ```
 
----
+![Neon divider][divider]
 
 ## 🗺️ Project Map
 
@@ -412,7 +416,7 @@ git commit -m "docs: polish readme visuals"
         └── tasks.json
 ```
 
----
+![Neon divider][divider]
 
 ## 🌟 Credits
 
@@ -422,7 +426,7 @@ git commit -m "docs: polish readme visuals"
 - [MesloLGS NF][meslo]
 - [Visual Studio Code documentation][vscode-docs]
 
----
+![Neon divider][divider]
 
 ## <img alt="License" src="assets/icons/license.svg" width="22"> License
 
@@ -433,6 +437,9 @@ Corporation.
 
 ![Footer wave][footer]
 
+[hero]: assets/readme/hero.svg
+[typing]: assets/readme/typing.svg
+[divider]: assets/readme/divider.svg
 [footer]: https://capsule-render.vercel.app/api?type=waving&color=0:f5c2e7,50:cba6f7,100:89dceb&height=120&section=footer
 [catppuccin]: https://github.com/catppuccin/vscode
 [catppuccin-icons]: https://github.com/catppuccin/vscode-icons

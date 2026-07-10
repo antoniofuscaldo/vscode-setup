@@ -300,14 +300,12 @@ real daily workflow.
 
 Run these from **Terminal > Run Task...** in VS Code.
 
-| Task                      | Why You Want It                                                        |
-| :------------------------ | :--------------------------------------------------------------------- |
-| ⚡ Update Extensions List | Refreshes the extension list from your current VS Code install.        |
-| 🧪 Open Playground        | Opens `playground.js` to test fonts, ligatures, and colors.            |
-| 📦 Smart Install Deps     | Detects common dependency files and runs the matching install command. |
-| 🚀 Start Local Server     | Starts a simple Python HTTP server on port `8000`.                     |
-| 🔍 Find TODOs             | Searches the project for `TODO` and `FIXME` comments.                  |
-| 💀 Kill Process on Port   | Kills a process using a provided port number.                          |
+| Task                      | Why You Want It                                                 |
+| :------------------------ | :-------------------------------------------------------------- |
+| ⚡ Update Extensions List | Refreshes the extension list from your current VS Code install. |
+| 🧪 Open Playground        | Opens `playground.js` to test fonts, ligatures, and colors.     |
+| 🚀 Start Local Server     | Starts a simple Python HTTP server on port `8000`.              |
+| 🔍 Find TODOs             | Searches the project for `TODO` and `FIXME` comments.           |
 
 ---
 

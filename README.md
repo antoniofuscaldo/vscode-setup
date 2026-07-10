@@ -363,13 +363,14 @@ pnpm run format:check
 | :---------------------------- | :-------------------------------------------- |
 | `pnpm run format`             | Formats Markdown, VS Code JSON, and snippets. |
 | `pnpm run format:check`       | Checks formatting without writing changes.    |
+| `pnpm run lint:staged`        | Runs the staged-file pre-commit checks.       |
 | `pnpm run clean:dist`         | Removes `dist`.                               |
 | `pnpm run clean:node_modules` | Removes `node_modules`.                       |
 | `pnpm run clean:all`          | Removes generated output and dependencies.    |
 
 Commits are guarded by Husky:
 
-- `pre-commit` runs lint-staged formatting.
+- `pre-commit` runs lint-staged using `.lintstagedrc`.
 - `commit-msg` validates Conventional Commits with commitlint.
 
 ```bash

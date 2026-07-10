@@ -36,5 +36,6 @@
     "xabikos",
     "yzhang",
     "Zixuan"
-  ]
+  ],
+  "js/ts.experimental.useTsgo": false
 }

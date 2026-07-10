@@ -196,8 +196,9 @@ This setup keeps Git intentionally explicit:
 ### 🤖 AI Assistants
 
 AI extensions are account-dependent, so this setup keeps them explicit. The
-current synced install includes Gemini Code Assist and Mintlify, while the
-settings file can still be adjusted if you later enable other assistants.
+current synced install includes Gemini Code Assist and Mintlify. Settings for
+other assistants are intentionally omitted unless their extensions are installed
+and reviewed.
 
 ---
 

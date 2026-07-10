@@ -70,8 +70,6 @@
   "git.autofetch": true,
   "git.ignoreRebaseWarning": true,
   "git.postCommitCommand": "none",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
 
   "javascript.preferences.quoteStyle": "double",
 
@@ -160,16 +158,8 @@
     "gleam": "gleam run -m $fileNameWithoutExt"
   },
 
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.enable": {
-    "markdown": true
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.editor.enableCodeActions": true,
-  "github.copilot.renameSuggestions.triggerAutomatically": true,
   "geminicodeassist.project": "",
   "geminicodeassist.inlineSuggestions.enableAuto": false,
-  "cody.suggestions.mode": "autocomplete",
   "chat.viewSessions.orientation": "stacked",
 
   "liveServer.settings.donotVerifyTags": true,

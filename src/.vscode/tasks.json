@@ -4,9 +4,9 @@
     {
       "label": "⚡ Update Extensions List",
       "type": "shell",
-      "command": "code --list-extensions > src/extensions.txt",
+      "command": "code --list-extensions > src/.vscode/extensions.txt",
       "problemMatcher": [],
-      "detail": "Updates the legacy extensions.txt file with your currently installed extensions.",
+      "detail": "Updates src/.vscode/extensions.txt with your currently installed extensions.",
       "presentation": {
         "reveal": "silent",
         "panel": "shared"

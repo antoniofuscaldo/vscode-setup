@@ -195,9 +195,9 @@ This setup keeps Git intentionally fast:
 
 ### 🤖 AI Assistants
 
-AI extensions are recommended as part of the template, but they stay
-account-dependent. The setup includes configuration for GitHub Copilot, Gemini
-Code Assist, GitLens AI, Cody, and the VS Code chat layout.
+AI extensions are account-dependent, so this setup keeps them explicit. The
+current synced install includes Gemini Code Assist and Mintlify, while the
+settings file can still be adjusted if you later enable other assistants.
 
 ---
 
@@ -206,17 +206,17 @@ Code Assist, GitLens AI, Cody, and the VS Code chat layout.
 All extensions are installed from `src/.vscode/extensions.txt` and recommended
 through `src/.vscode/extensions.json`.
 
-| Orbit           | Extensions                                                         |
-| :-------------- | :----------------------------------------------------------------- |
-| 🎨 Theme & UI   | Catppuccin, Catppuccin Icons, Dracula, Material Icons, Iconify     |
-| 🌐 Frontend     | Tailwind, Astro, MDX, PostCSS, ESLint, Prettier, Import Cost       |
-| ⚛️ JavaScript   | ES6 snippets, ES7 React snippets, Pretty TypeScript Errors, Vitest |
-| 🐍 Python       | Python, Pylance, debugpy, Python Environment Manager               |
-| ☕ Java         | Red Hat Java, Java Pack, Maven, Gradle, Debugger, Test Runner      |
-| 🤖 AI           | GitHub Copilot, Copilot Chat, Gemini Code Assist, Mintlify         |
-| 🌳 Git & DevOps | GitLens, GitHub Actions, Pull Requests, Docker, Remote SSH         |
-| 📝 Docs         | Markdown All in One, Markdown Preview Enhanced, Spell Checker      |
-| 🛠️ Utilities    | Code Runner, Live Server, Error Lens, Better Comments, Rainbow CSV |
+| Orbit           | Extensions                                                                   |
+| :-------------- | :--------------------------------------------------------------------------- |
+| 🎨 Theme & UI   | Catppuccin, Catppuccin Icons, Dracula, Material Icons, Dash                  |
+| 🌐 Frontend     | Tailwind, Astro, MDX, PostCSS, ESLint, Prettier, Stylelint, Bootstrap        |
+| ⚛️ JavaScript   | TypeScript Nightly, JavaScript snippets, Pretty TypeScript Errors            |
+| 🐍 Python       | Python, Pylance, debugpy, Python Environment Manager                         |
+| ☕ Java         | Red Hat Java, Java Pack, Maven, Gradle, Debugger, Test Runner                |
+| 🤖 AI & Docs    | Gemini Code Assist, Mintlify, Document This                                  |
+| 🌳 Git & DevOps | GitHub Actions, Pull Requests, Docker, Containers, Dev Containers, SSH       |
+| 📝 Writing      | Markdown All in One, Markdown Preview Enhanced, Spell Checker, EditorConfig  |
+| 🛠️ Utilities    | Code Runner, Live Server, Error Lens, Better Comments, Rainbow CSV, CodeTime |
 
 ### Full Extension List
 
@@ -232,12 +232,10 @@ through `src/.vscode/extensions.json`.
 | Dash                       | `deerawan.vscode-dash`                          |
 | Docker                     | `docker.docker`                                 |
 | Dracula Theme              | `dracula-theme.theme-dracula`                   |
-| GitLens                    | `eamodio.gitlens`                               |
+| EditorConfig               | `editorconfig.editorconfig`                     |
 | Prettier                   | `esbenp.prettier-vscode`                        |
 | Auto Rename Tag            | `formulahendry.auto-rename-tag`                 |
 | Code Runner                | `formulahendry.code-runner`                     |
-| GitHub Copilot             | `github.copilot`                                |
-| GitHub Copilot Chat        | `github.copilot-chat`                           |
 | GitHub Actions             | `github.vscode-github-actions`                  |
 | GitHub Pull Requests       | `github.vscode-pull-request-github`             |
 | Gemini Code Assist         | `google.geminicodeassist`                       |
@@ -246,11 +244,12 @@ through `src/.vscode/extensions.json`.
 | Rainbow CSV                | `mechatroner.rainbow-csv`                       |
 | Mintlify Doc Writer        | `mintlify.document`                             |
 | Containers                 | `ms-azuretools.vscode-containers`               |
-| Docker                     | `ms-azuretools.vscode-docker`                   |
+| Docker for VS Code         | `ms-azuretools.vscode-docker`                   |
 | debugpy                    | `ms-python.debugpy`                             |
 | Python                     | `ms-python.python`                              |
 | Pylance                    | `ms-python.vscode-pylance`                      |
 | Python Environment Manager | `ms-python.vscode-python-envs`                  |
+| Dev Containers             | `ms-vscode-remote.remote-containers`            |
 | Remote SSH                 | `ms-vscode-remote.remote-ssh`                   |
 | Remote SSH Edit            | `ms-vscode-remote.remote-ssh-edit`              |
 | Remote Explorer            | `ms-vscode.remote-explorer`                     |
@@ -262,6 +261,7 @@ through `src/.vscode/extensions.json`.
 | Markdown Preview Enhanced  | `shd101wyy.markdown-preview-enhanced`           |
 | Code Spell Checker         | `streetsidesoftware.code-spell-checker`         |
 | Italian Spell Checker      | `streetsidesoftware.code-spell-checker-italian` |
+| Stylelint                  | `stylelint.vscode-stylelint`                    |
 | MDX                        | `unifiedjs.vscode-mdx`                          |
 | Error Lens                 | `usernamehw.errorlens`                          |
 | Migrate Java to Azure      | `vscjava.migrate-java-to-azure`                 |
@@ -273,14 +273,9 @@ through `src/.vscode/extensions.json`.
 | Java Upgrade               | `vscjava.vscode-java-upgrade`                   |
 | Maven for Java             | `vscjava.vscode-maven`                          |
 | PostCSS Language Support   | `vunguyentuan.vscode-postcss`                   |
-| Import Cost                | `wix.vscode-import-cost`                        |
 | JavaScript Snippets        | `xabikos.javascriptsnippets`                    |
 | Pretty TypeScript Errors   | `yoavbls.pretty-ts-errors`                      |
 | Markdown All in One        | `yzhang.markdown-all-in-one`                    |
-| ES7 React Snippets         | `dsznajder.es7-react-js-snippets`               |
-| Prisma                     | `prisma.prisma`                                 |
-| Iconify IntelliSense       | `antfu.iconify`                                 |
-| Vitest Explorer            | `ZixuanChen.vitest-explorer`                    |
 
 ---
 

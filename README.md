@@ -202,6 +202,35 @@ and reviewed.
 
 ---
 
+## 🛡️ Corporate & Security Notes
+
+This setup is designed to stay safe by default for professional work, but it
+should still be reviewed against your organization's policies before adoption.
+
+- **Workspace Trust**: keep VS Code Workspace Trust enabled and open unfamiliar
+  repositories in Restricted Mode until the source is reviewed. See
+  [Workspace Trust][workspace-trust].
+- **Extensions**: treat `src/.vscode/extensions.txt` as an allow-list candidate.
+  Review publishers, licenses, telemetry, update cadence, and Marketplace trust
+  signals before rollout. See
+  [Extension runtime security][extension-security].
+- **Tasks**: shared tasks are intentionally limited to explicit, low-risk
+  helpers. Avoid adding install, kill, sync, deploy, or destructive commands
+  unless they are clearly documented and approved.
+- **Git**: sync and push stay manual. Smart commit and post-commit sync are
+  disabled so review, CI, and branch protection workflows remain in control.
+- **AI**: assistant extensions are opt-in and account-dependent. Add
+  assistant-specific settings only after the extension, data handling, and
+  organization policy have been reviewed.
+- **Telemetry**: VS Code telemetry is disabled with
+  `telemetry.telemetryLevel: off`, but extension telemetry and online services
+  may require separate review. See [Telemetry][telemetry].
+- **Secrets**: do not store tokens, API keys, passwords, certificates, or
+  internal URLs in settings, snippets, tasks, or README examples. Use
+  organization-approved secret managers.
+
+---
+
 ## 🧩 Extension Galaxy
 
 All extensions are installed from `src/.vscode/extensions.txt` and recommended
@@ -409,3 +438,6 @@ Corporation.
 [monaspace]: https://monaspace.githubnext.com/
 [meslo]: https://github.com/romkatv/powerlevel10k#manual-font-installation
 [vscode-docs]: https://code.visualstudio.com/docs
+[workspace-trust]: https://code.visualstudio.com/docs/editing/workspaces/workspace-trust
+[extension-security]: https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security
+[telemetry]: https://code.visualstudio.com/docs/configure/telemetry

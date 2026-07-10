@@ -359,19 +359,19 @@ pnpm install
 pnpm run format:check
 ```
 
-| Script                        | Purpose                                       |
-| :---------------------------- | :-------------------------------------------- |
-| `pnpm run format`             | Formats Markdown, VS Code JSON, and snippets. |
-| `pnpm run format:check`       | Checks formatting without writing changes.    |
-| `pnpm run lint:staged`        | Runs the staged-file pre-commit checks.       |
-| `pnpm run clean:dist`         | Removes `dist`.                               |
-| `pnpm run clean:node_modules` | Removes `node_modules`.                       |
-| `pnpm run clean:all`          | Removes generated output and dependencies.    |
+| Script                        | Purpose                                                |
+| :---------------------------- | :----------------------------------------------------- |
+| `pnpm run format`             | Formats Markdown, configs, VS Code JSON, and snippets. |
+| `pnpm run format:check`       | Checks formatting without writing changes.             |
+| `pnpm run lint:staged`        | Runs the staged-file pre-commit checks.                |
+| `pnpm run clean:dist`         | Removes `dist`.                                        |
+| `pnpm run clean:node_modules` | Removes `node_modules`.                                |
+| `pnpm run clean:all`          | Removes generated output and dependencies.             |
 
 Commits are guarded by Husky:
 
 - `pre-commit` runs lint-staged using `.lintstagedrc`.
-- `commit-msg` validates Conventional Commits with commitlint.
+- `commit-msg` validates Conventional Commits with `commitlint.config.mjs`.
 
 ```bash
 git commit -m "feat: add prisma extension to recommendations"
@@ -398,7 +398,7 @@ git commit -m "docs: polish readme visuals"
 │   ├── screenshot-1.png
 │   ├── screenshot-2.png
 │   └── vscode.png
-├── commitlint.config.js
+├── commitlint.config.mjs
 ├── package.json
 ├── playground.js
 ├── pnpm-lock.yaml

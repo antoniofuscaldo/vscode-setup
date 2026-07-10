@@ -1,5 +1,7 @@
 {
   "*.{json,yaml,yml}": ["prettier --write"],
+  "*.mjs": ["prettier --write"],
+  ".prettierrc.mjs": ["prettier --write"],
   "*.code-snippets": ["prettier --write --parser jsonc"],
   "*.md": ["markdownlint-cli2 --fix", "prettier --write"]
 }

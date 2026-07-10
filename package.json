@@ -8,8 +8,8 @@
     "clean:all": "pnpm run clean:dist && pnpm run clean:node_modules",
     "clean:dist": "rimraf dist",
     "clean:node_modules": "rimraf node_modules",
-    "format": "prettier --write 'src/.vscode/**/*.json' 'src/.vscode/*.code-snippets' '*.md'",
-    "format:check": "prettier --check 'src/.vscode/**/*.json' 'src/.vscode/*.code-snippets' '*.md'",
+    "format": "prettier --write 'src/.vscode/**/*.json' 'src/.vscode/*.code-snippets' 'package.json' '.lintstagedrc' '.markdownlint.json' '*.md' '*.mjs' '.prettierrc.mjs'",
+    "format:check": "prettier --check 'src/.vscode/**/*.json' 'src/.vscode/*.code-snippets' 'package.json' '.lintstagedrc' '.markdownlint.json' '*.md' '*.mjs' '.prettierrc.mjs'",
     "lint:staged": "lint-staged",
     "prepare": "husky"
   },

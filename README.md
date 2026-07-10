@@ -1,19 +1,5 @@
 # 🎨 Ultimate VS Code Setup
 
-![Animated banner][banner]
-
-![Typing effect][typing]
-
-[![VS Code][badge-vscode]][vscode]
-[![pnpm][badge-pnpm]][pnpm]
-[![Catppuccin][badge-catppuccin]][catppuccin]
-[![Conventional Commits][badge-commits]][commits]
-![License][badge-license]
-
-<img alt="macOS" src="assets/icons/Apple_dark.svg" width="28">
-<img alt="Windows" src="assets/icons/windows.svg" width="28">
-<img alt="Linux" src="assets/icons/linux.svg" width="28">
-
 > A beautiful, opinionated, and productivity-focused Visual Studio Code
 > template for macOS, Windows, and Linux.
 
@@ -30,13 +16,16 @@ real work without hiding the details behind an installer.
 | :--------------------------------------------------------------- | :-------------------------------------------------------- | :--------------------------------------------------------------------- |
 | Catppuccin Mocha, soft contrast, clean icons, modern typography. | Format on save, smart Git, useful tasks, fast navigation. | Frontend, Python, Java, Markdown, WordPress, AI, Docker, remote tools. |
 
-| 🐱 Theme         | 🔤 Editor Font     | 🖥️ Terminal Font | 🧠 Style                              |
-| :--------------- | :----------------- | :--------------- | :------------------------------------ |
-| Catppuccin Mocha | Monaspace Neon Var | MesloLGS NF      | Elegant, productive, a little magical |
+| Theme                                                                                | 🔤 Editor Font     | 🖥️ Terminal Font | 🧠 Style                              |
+| :----------------------------------------------------------------------------------- | :----------------- | :--------------- | :------------------------------------ |
+| <img alt="Catppuccin" src="assets/icons/catppuccin.png" width="20"> Catppuccin Mocha | Monaspace Neon Var | MesloLGS NF      | Elegant, productive, a little magical |
 
-```text
-Palette sparks:  🟣 #cba6f7   🩵 #89dceb   🌸 #f5c2e7   🟢 #a6e3a1
-```
+| Preview                                                              | Color | Hex       |
+| :------------------------------------------------------------------- | :---- | :-------- |
+| <img alt="Mauve #cba6f7" src="assets/palette/mauve.svg" width="120"> | Mauve | `#cba6f7` |
+| <img alt="Sky #89dceb" src="assets/palette/sky.svg" width="120">     | Sky   | `#89dceb` |
+| <img alt="Pink #f5c2e7" src="assets/palette/pink.svg" width="120">   | Pink  | `#f5c2e7` |
+| <img alt="Green #a6e3a1" src="assets/palette/green.svg" width="120"> | Green | `#a6e3a1` |
 
 ---
 
@@ -413,7 +402,7 @@ git commit -m "docs: polish readme visuals"
 
 ---
 
-## 📄 License
+## <img alt="License" src="assets/icons/license.svg" width="22"> License
 
 Released under the [MIT License](LICENSE).
 
@@ -422,19 +411,9 @@ Corporation.
 
 ![Footer wave][footer]
 
-[banner]: https://capsule-render.vercel.app/api?type=waving&color=0:cba6f7,50:89dceb,100:f5c2e7&height=190&section=header&text=Ultimate%20VS%20Code%20Setup&fontColor=11111b&fontSize=42&animation=twinkling
-[typing]: https://readme-typing-svg.demolab.com?font=Monaspace&pause=900&color=CBA6F7&width=760&lines=Catppuccin+Mocha+%E2%9C%A8;Monaspace+Neon+Var+%F0%9F%94%A4;Manual+setup%2C+full+control+%F0%9F%9A%80
 [footer]: https://capsule-render.vercel.app/api?type=waving&color=0:f5c2e7,50:cba6f7,100:89dceb&height=120&section=footer
-[badge-vscode]: https://img.shields.io/badge/VS%20Code-ready-24a1f2?style=for-the-badge&logo=visualstudiocode&logoColor=white
-[badge-pnpm]: https://img.shields.io/badge/pnpm-tooling-f69220?style=for-the-badge&logo=pnpm&logoColor=white
-[badge-catppuccin]: https://img.shields.io/badge/Catppuccin-Mocha-cba6f7?style=for-the-badge
-[badge-commits]: https://img.shields.io/badge/commits-conventional-fe5196?style=for-the-badge
-[badge-license]: https://img.shields.io/badge/license-MIT-f9e2af?style=for-the-badge
-[vscode]: https://code.visualstudio.com/
-[pnpm]: https://pnpm.io/
 [catppuccin]: https://github.com/catppuccin/vscode
 [catppuccin-icons]: https://github.com/catppuccin/vscode-icons
-[commits]: https://www.conventionalcommits.org/
 [monaspace]: https://monaspace.githubnext.com/
 [meslo]: https://github.com/romkatv/powerlevel10k#manual-font-installation
 [vscode-docs]: https://code.visualstudio.com/docs
